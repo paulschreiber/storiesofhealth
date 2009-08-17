@@ -175,7 +175,6 @@ div#about {
 div.container {
   clear: both;
   width: 1100px;
-  min-height: 43em;
 }
 
 div.wide, div.narrow {
@@ -184,7 +183,6 @@ div.wide, div.narrow {
 
 div.wide {
   width: 680px;
-  height: 600px;
 }
 
 div.narrow {
