@@ -11,7 +11,7 @@ stories_029:
   first_name: Alicia
 stories_018: 
   congressional_district: "15"
-  city: "San Jose "
+  city: "San Jose"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -21,7 +21,7 @@ stories_018:
   first_name: Gerry
 stories_007: 
   congressional_district: "10"
-  city: "Oakland "
+  city: Oakland
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -51,7 +51,7 @@ stories_019:
   first_name: Bruce
 stories_008: 
   congressional_district: "10"
-  city: "Walnut Creek "
+  city: "Walnut Creek"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -71,7 +71,7 @@ stories_031:
   first_name: William
 stories_020: 
   congressional_district: "15"
-  city: "San Jose "
+  city: "San Jose"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -81,7 +81,7 @@ stories_020:
   first_name: Elaine
 stories_009: 
   congressional_district: "9"
-  city: "Berkeley "
+  city: "Berkeley"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -101,7 +101,7 @@ stories_032:
   first_name: Madera
 stories_021: 
   congressional_district: "16"
-  city: "San Jose "
+  city: "San Jose"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -111,7 +111,7 @@ stories_021:
   first_name: Dale
 stories_010: 
   congressional_district: "13"
-  city: "San Leandro "
+  city: "San Leandro"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -131,7 +131,7 @@ stories_022:
   first_name: Rajan
 stories_011: 
   congressional_district: "13"
-  city: "Fremont "
+  city: "Fremont"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -141,7 +141,7 @@ stories_011:
   first_name: Suzanne
 stories_023: 
   congressional_district: "9"
-  city: "Berkeley "
+  city: "Berkeley"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -181,7 +181,7 @@ stories_024:
   first_name: Forrest
 stories_013: 
   congressional_district: "6"
-  city: "Corte Madera "
+  city: "Corte Madera"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -211,7 +211,7 @@ stories_025:
   first_name: Lolita
 stories_014: 
   congressional_district: "13"
-  city: "Fremont "
+  city: "Fremont"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -241,7 +241,7 @@ stories_026:
   first_name: Diane
 stories_015: 
   congressional_district: "11"
-  city: "Stockton "
+  city: "Stockton"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -271,7 +271,7 @@ stories_027:
   first_name: Margriet
 stories_016: 
   congressional_district: "9"
-  city: "Berkeley "
+  city: "Berkeley"
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -311,7 +311,7 @@ stories_017:
   first_name: Lisa
 stories_006: 
   congressional_district: "9"
-  city: "Oakland "
+  city: Oakland
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 

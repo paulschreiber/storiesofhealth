@@ -45,17 +45,19 @@ function bindTags() {
 }
 
 function initScrollable() {
+  var itemCount = $('div.items div').length;
+  itemCount = (itemCount < 3) ? itemCount : 3;
   $("div.scrollable").scrollable({
-	  size: 3,
+	  size: itemCount,
 	  speed: 1200
 	});     
+	$("div.scrollable").scrollable().seekTo(0);
 }
 
 $(function() {         
 	  bindFrontPageVideos();
 		bindVideos();
     bindTags();
-    initScrollable();
 }); 
 
 jQuery.ajaxSetup({
