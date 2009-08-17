@@ -4,7 +4,7 @@ development:
   adapter: mysql
   database: storiesofhealth_development
   host: localhost
-  user: root
+  username: root
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,5 +19,5 @@ production:
   adapter: mysql
   database: storiesofhealth
   host: localhost
-  user: storiesofhealth
+  username: storiesofhealth
   password: storiesofhealth
