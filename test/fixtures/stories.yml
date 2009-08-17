@@ -1,0 +1,321 @@
+--- 
+stories_029: 
+  congressional_district: "9"
+  city: Oakland
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "29"
+  last_name: Wright
+  state: CA
+  first_name: Alicia
+stories_018: 
+  congressional_district: "15"
+  city: "San Jose "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "18"
+  last_name: Hunt
+  state: CA
+  first_name: Gerry
+stories_007: 
+  congressional_district: "10"
+  city: "Oakland "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "7"
+  last_name: Meighan
+  state: CA
+  first_name: Melissa
+stories_030: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "30"
+  last_name: Cohen
+  state: CA
+  first_name: Evered
+stories_019: 
+  congressional_district: "16"
+  city: San Jose
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "19"
+  last_name: Roberts
+  state: CA
+  first_name: Bruce
+stories_008: 
+  congressional_district: "10"
+  city: "Walnut Creek "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "8"
+  last_name: Bellet
+  state: CA
+  first_name: Laurie
+stories_031: 
+  congressional_district: "9"
+  city: Oakland
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "31"
+  last_name: Ruch
+  state: CA
+  first_name: William
+stories_020: 
+  congressional_district: "15"
+  city: "San Jose "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "20"
+  last_name: Coombs
+  state: CA
+  first_name: Elaine
+stories_009: 
+  congressional_district: "9"
+  city: "Berkeley "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "9"
+  last_name: Gilbert
+  state: CA
+  first_name: Judith
+stories_032: 
+  congressional_district: "13"
+  city: Hayward
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "32"
+  last_name: Glenn
+  state: CA
+  first_name: Madera
+stories_021: 
+  congressional_district: "16"
+  city: "San Jose "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "21"
+  last_name: Nelson
+  state: CA
+  first_name: Dale
+stories_010: 
+  congressional_district: "13"
+  city: "San Leandro "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "10"
+  last_name: Rasmussen
+  state: CA
+  first_name: Kristen
+stories_022: 
+  congressional_district: "14"
+  city: Palo Alto
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "22"
+  last_name: Narang
+  state: CA
+  first_name: Rajan
+stories_011: 
+  congressional_district: "13"
+  city: "Fremont "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "11"
+  last_name: Aldrich
+  state: CA
+  first_name: Suzanne
+stories_023: 
+  congressional_district: "9"
+  city: "Berkeley "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "23"
+  last_name: Gerritz
+  state: CA
+  first_name: Teri
+stories_012: 
+  congressional_district: "13"
+  city: Fremont
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "12"
+  last_name: Pickron
+  state: CA
+  first_name: Eleanor
+stories_001: 
+  congressional_district: "21"
+  city: Fresno
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "1"
+  last_name: Adolph
+  state: CA
+  first_name: Jeff
+stories_024: 
+  congressional_district: "9"
+  city: Oakland
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "24"
+  last_name: Hill
+  state: CA
+  first_name: Forrest
+stories_013: 
+  congressional_district: "6"
+  city: "Corte Madera "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "13"
+  last_name: Stoliar
+  state: CA
+  first_name: Pati
+stories_002: 
+  congressional_district: "20"
+  city: Fresno
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "2"
+  last_name: Krugman
+  state: CA
+  first_name: Chuck
+stories_025: 
+  congressional_district: "9"
+  city: Oakland
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "25"
+  last_name: Ratchford
+  state: CA
+  first_name: Lolita
+stories_014: 
+  congressional_district: "13"
+  city: "Fremont "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "14"
+  last_name: Ehlers
+  state: CA
+  first_name: Jackie
+stories_003: 
+  congressional_district: "19"
+  city: Fresno
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "3"
+  last_name: Sparks
+  state: CA
+  first_name: Amanda
+stories_026: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "26"
+  last_name: Wesley Smith
+  state: CA
+  first_name: Diane
+stories_015: 
+  congressional_district: "11"
+  city: "Stockton "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "15"
+  last_name: Davis
+  state: CA
+  first_name: Sandra
+stories_004: 
+  congressional_district: "20"
+  city: Fresno
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "4"
+  last_name: Peterson
+  state: CA
+  first_name: Michael
+stories_027: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "27"
+  last_name: Rensch
+  state: CA
+  first_name: Margriet
+stories_016: 
+  congressional_district: "9"
+  city: "Berkeley "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "16"
+  last_name: Liu
+  state: CA
+  first_name: Grace
+stories_005: 
+  congressional_district: "19"
+  city: Fresno
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "5"
+  last_name: Baker
+  state: CA
+  first_name: Lynn
+stories_028: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "28"
+  last_name: Fitzgerald
+  state: CA
+  first_name: Patrick
+stories_017: 
+  congressional_district: "14"
+  city: Palo Alto
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "17"
+  last_name: Altieri
+  state: CA
+  first_name: Lisa
+stories_006: 
+  congressional_district: "9"
+  city: "Oakland "
+  created_at: 2009-08-16 05:46:39
+  updated_at: 2009-08-16 05:46:39
+  youtube_id: 
+  id: "6"
+  last_name: Pae
+  state: CA
+  first_name: Jennifer

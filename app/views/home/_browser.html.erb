@@ -1,0 +1,13 @@
+<div id="browser" class="browser">
+	<div class="navi"></div>
+
+	<a class="prevPage"></a> 
+	<div class="scrollable">		
+		<div class="items">
+			<% @stories.each do |s| %>
+				<%= content_tag(:div, "", :id => "story-#{s.id}", :class => "video-story", :style => "background: url('/images/headshots-small/#{s.image_id}');") %>
+			<% end %>
+		</div><!-- items -->
+	</div><!-- scrollable -->
+<a class="nextPage"></a> 
+</div>

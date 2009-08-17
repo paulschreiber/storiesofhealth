@@ -1,0 +1,16 @@
+<p class="intro">Millions of Americans—people just like you—have suffered because of this country’s broken health care system. <a href="<%= url_for(:controller => :home, :action => :video) %>">Listen to their stories</a>.</p>
+
+<div class="selected-container">
+<%= content_tag(:div, "<div class='play'></div>", :id => "story-#{@story.id}", :class => "video-story-medium", :style => "background: url('/images/headshots-medium/#{@story.image_id}');") %>
+
+<div class="selected-stories">
+<% @selected_stories.each do |s| %>
+	<%= content_tag(:div, "<div class='play'></div>", :id => "story-#{s.id}", :class => "video-story", :style => "background: url('/images/headshots-small/#{s.image_id}');") %>
+<% end %>
+</div>
+</div>
+
+<%- compute_tag_sentence(nil) -%>
+<p class="intro">See stories about people who <%= @tag_sentence %>.</p>
+
+<input class="button" type="button" value="&#9658; Take Action" onclick="window.location='<%= url_for(:action => "action") %>'">

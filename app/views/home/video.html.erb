@@ -1,0 +1,24 @@
+<%- compute_tag_sentence(@story) -%>
+<div id="video" class="video">
+	<object width="425" height="344">
+		<param name="movie" value="http://www.youtube.com/v/<%= @story.youtube_id %>"></param>
+		<param name="allowFullScreen" value="true"></param>
+		<param name="allowscriptaccess" value="always"></param>
+		<embed src="http://www.youtube.com/v/<%= @story.youtube_id %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+		<div class="share">
+			<p>
+			<a href="http://www.addthis.com/bookmark.php" class="addthis_button">Share <%= @story.first_name %>’s story</a> with your friends. <a href="<%= url_for :controller => :home, :action => :video, :id => @story.id %>" class="permalink">permalink</a></p>
+			
+			<p>See more stories about people <a class="tag" href="/from/<%= @story.city.downcase %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
+			</p>
+		</div>
+
+</div>
+<script type="text/javascript" charset="utf-8">
+currentVideoUrl = '<%= url_for :controller => :home, :action => :video, :id => @story.id, :host => request.host %>';	
+</script>
+
+<% if @browser %>
+<%= render :partial => "browser" %>
+<% end %>
