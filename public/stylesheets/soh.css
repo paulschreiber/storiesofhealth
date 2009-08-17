@@ -5,7 +5,7 @@ brown #51392E
 */
 
 body {
-  margin: 2em;
+  margin: 2em auto;
   font-family: georgia;
 }
 
@@ -79,7 +79,7 @@ input.button:hover {
 /* ------ videos ------------------------------- */
 div.selected-container {
   margin-bottom: 2em;
-  height: 450px;
+  height: 300px;
   clear: both;
 }
 
@@ -141,7 +141,7 @@ div.video-story-medium div.play {
   width: 100px;
   height: 71px;
   background: url('/images/play-medium.png') no-repeat;
-  margin-top: 155px;
+  margin-top: 170px;
   margin-left: 150px;
 }
 
@@ -149,7 +149,7 @@ div.video-story div.play {
   width: 50px;
   height: 35px;
   background: url('/images/play-small.png') no-repeat;
-  margin-top: 77px;
+  margin-top: 88px;
   margin-left: 75px;
 }
 
@@ -174,7 +174,8 @@ div#about {
 
 div.container {
   clear: both;
-  width: 1100px;
+  width: 68em;
+  margin: 0 auto;
 }
 
 div.wide, div.narrow {
@@ -183,6 +184,7 @@ div.wide, div.narrow {
 
 div.wide {
   width: 680px;
+  padding-top: 20px;
 }
 
 div.narrow {
@@ -191,12 +193,20 @@ div.narrow {
 }
 
 div#footer {
+  width: 68em;
+  height: 2em;
+  padding-top: 1em;
+
+  text-align: center;
   clear: both;
 }
 
 div#footer ul {
+  margin-top: 3em;
+  border-top: 1px dotted #51392E;
   padding: 0;
   padding-left: 1.5em;
+  padding-top: 0.5em;
 }
 
 div#footer li {
