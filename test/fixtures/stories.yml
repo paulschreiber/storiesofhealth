@@ -3,15 +3,15 @@ stories_029:
   congressional_district: "9"
   city: Oakland
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 08:37:40
+  youtube_id: kjgUcCGR1zg
   id: "29"
   last_name: Wright
   state: CA
   first_name: Alicia
 stories_018: 
   congressional_district: "15"
-  city: "San Jose"
+  city: San Jose
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -43,15 +43,15 @@ stories_019:
   congressional_district: "16"
   city: San Jose
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:10:17
+  youtube_id: DaGB5qvHNeU
   id: "19"
   last_name: Roberts
   state: CA
   first_name: Bruce
 stories_008: 
   congressional_district: "10"
-  city: "Walnut Creek"
+  city: Walnut Creek
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -63,25 +63,25 @@ stories_031:
   congressional_district: "9"
   city: Oakland
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 08:28:19
+  youtube_id: Ih8awFU2ZMQ
   id: "31"
   last_name: Ruch
   state: CA
   first_name: William
 stories_020: 
   congressional_district: "15"
-  city: "San Jose"
+  city: San Jose
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:12:32
+  youtube_id: r72rUsjdRgQ
   id: "20"
   last_name: Coombs
   state: CA
   first_name: Elaine
 stories_009: 
   congressional_district: "9"
-  city: "Berkeley"
+  city: Berkeley
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -93,25 +93,25 @@ stories_032:
   congressional_district: "13"
   city: Hayward
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 08:33:59
+  youtube_id: VeKt-uqmLHc
   id: "32"
   last_name: Glenn
   state: CA
   first_name: Madera
 stories_021: 
   congressional_district: "16"
-  city: "San Jose"
+  city: San Jose
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:09:35
+  youtube_id: CX-HND0ex0o
   id: "21"
   last_name: Nelson
   state: CA
   first_name: Dale
 stories_010: 
   congressional_district: "13"
-  city: "San Leandro"
+  city: San Leandro
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -131,7 +131,7 @@ stories_022:
   first_name: Rajan
 stories_011: 
   congressional_district: "13"
-  city: "Fremont"
+  city: Fremont
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -141,7 +141,7 @@ stories_011:
   first_name: Suzanne
 stories_023: 
   congressional_district: "9"
-  city: "Berkeley"
+  city: Berkeley
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -153,8 +153,8 @@ stories_012:
   congressional_district: "13"
   city: Fremont
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:15:08
+  youtube_id: ZrxucPxmbGI
   id: "12"
   last_name: Pickron
   state: CA
@@ -181,7 +181,7 @@ stories_024:
   first_name: Forrest
 stories_013: 
   congressional_district: "6"
-  city: "Corte Madera"
+  city: Corte Madera
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -193,8 +193,8 @@ stories_002:
   congressional_district: "20"
   city: Fresno
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:09:56
+  youtube_id: 7foqPn1DXtI
   id: "2"
   last_name: Krugman
   state: CA
@@ -211,7 +211,7 @@ stories_025:
   first_name: Lolita
 stories_014: 
   congressional_district: "13"
-  city: "Fremont"
+  city: Fremont
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -223,8 +223,8 @@ stories_003:
   congressional_district: "19"
   city: Fresno
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:10:40
+  youtube_id: jRLPldqXqV0
   id: "3"
   last_name: Sparks
   state: CA
@@ -233,15 +233,15 @@ stories_026:
   congressional_district: "8"
   city: San Francisco
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-16 05:46:39
-  youtube_id: 
+  updated_at: 2009-08-17 09:12:15
+  youtube_id: L0Cq3qhFm3M
   id: "26"
   last_name: Wesley Smith
   state: CA
   first_name: Diane
 stories_015: 
   congressional_district: "11"
-  city: "Stockton"
+  city: Stockton
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
@@ -271,7 +271,7 @@ stories_027:
   first_name: Margriet
 stories_016: 
   congressional_district: "9"
-  city: "Berkeley"
+  city: Berkeley
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-16 05:46:39
   youtube_id: 
