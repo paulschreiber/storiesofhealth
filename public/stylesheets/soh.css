@@ -1,3 +1,8 @@
+/* Copyright 2009 Stories of Health <http://storiesofhealth.org/>
+ * Licensed under a Creative Commons Attribution-Noncommercial 3.0 United States License
+ * <http://creativecommons.org/licenses/by-nc/3.0/us/>
+ */
+ 
 /*
 red #AF243F
 blue #338CC1
@@ -84,7 +89,7 @@ input.button:hover {
 
 /* ------ videos ------------------------------- */
 div.selected-container {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   height: 300px;
   clear: both;
 }
@@ -100,7 +105,7 @@ div.scrollable {
 
 div.browser {
   margin-top: 9em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #999;
   height: 170px;
   margin-left: auto;
   margin-right: auto;
@@ -131,6 +136,7 @@ div.video-story-medium,
 div.video-story { 
     cursor: pointer;
     float: left; 
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(white));
 } 
 
 div.video-story {
@@ -138,7 +144,12 @@ div.video-story {
   height: 150px;
 }
 
+div.selected-stories div.video-story {
+  margin-bottom: 15px;
+}
+
 div.video-story-medium {
+  margin-top: 15px;
   width: 400px;
   height: 300px;
 }
@@ -202,12 +213,18 @@ div#footer {
   clear: both;
 }
 
-div#footer ul {
+div#footer ul.site {
   margin-top: 3em;
+  margin-bottom: 0.5em;
   border-top: 1px dotted #51392E;
   padding: 0;
   padding-left: 1.5em;
   padding-top: 0.5em;
+}
+
+div#footer ul.links {
+  font-size: 0.8em;
+  margin-top: 0;
 }
 
 div#footer li {

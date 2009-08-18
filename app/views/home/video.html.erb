@@ -8,15 +8,18 @@
 
 		<div class="share">
 			<p>
-			<a href="http://www.addthis.com/bookmark.php" class="addthis_button">Share <%= @story.first_name %>’s story</a> with your friends. <a href="<%= url_for :controller => :home, :action => :video, :id => @story.id %>" class="permalink">permalink</a></p>
+			<a href="http://www.addthis.com/bookmark.php" class="addthis_button">Share <%= @story.first_name %>’s story</a> with your friends. <a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
 			
-			<p>See more stories about people <a class="tag" href="/from/<%= URI.escape(@story.city.downcase) %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
+			<p>See more stories about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
 			</p>
 		</div>
 
 </div>
 <script type="text/javascript" charset="utf-8">
-currentVideoUrl = '<%= url_for :controller => :home, :action => :video, :id => @story.id, :host => request.host %>';	
+currentUrl = '<%= permalink(@story) %>';	
+<%- if 0 && RAILS_ENV == "production" && params[:action] == "story" # AJAX load -%>
+pageTracker._trackPageview(currentUrl);
+<%- end -%>
 </script>
 
 <% if @browser %>

@@ -17,7 +17,17 @@
 	<%= javascript_include_tag "jquery.mousewheel.min.js" %>
 	<%- end -%>
 	<%= javascript_include_tag "http://s7.addthis.com/js/250/addthis_widget.js?pub=storiesofhealth" %>
+	<%= javascript_include_tag "jquery.google-analytics.js" %>
 	<%= javascript_include_tag "soh.js" %>
+
+	<%- if RAILS_ENV != "production" -%>
+	<script type="text/javascript" charset="utf-8">
+	// <![CDATA[
+	$.trackPage("UA-1895263-5");
+	$.fn.track.defaults.debug = false;
+ 	// ]]>
+	</script>
+	<%- end -%>
 </head>
 
 <body>
@@ -39,28 +49,18 @@
 		</div><!-- wide -->
 
 		<div id="footer">
-			<ul>
+			<ul class="site">
 				<li><%= link_to("About", :action => :about) %></li>
 				<li><%= link_to("Share Your Story", :action => :share) %></li>
 				<li><%= link_to("Take Action", :action => "action") %></li>
 				<li><%= link_to("All Stories", :action => "video") %></li>
 			</ul>
+			<ul class="links">
+				<li><a href="http://twitter.com/storiesofhealth">Follow us on Twitter</a></li>
+				<li><a href="http://www.facebook.com/pages/Stories-of-Health/132099666063">Become a fan on Facebook</a></li>
+			</ul>
 		</div>
 	</div>
 	
-
-<%- if RAILS_ENV != "development" -%>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-1895263-5");
-pageTracker._trackPageview();
-} catch(err) {}
-</script>
-<%- end -%>
-
 </body>
 </html>

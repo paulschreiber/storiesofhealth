@@ -1,5 +1,9 @@
 module HomeHelper
-
+  
+  def permalink(story)
+     url_for(:controller => :home, :action => :video, :id => story.id, :host => request.host)
+  end
+  
   def compute_tag_sentence(story)
     tag_list = []
     

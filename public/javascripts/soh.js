@@ -1,22 +1,30 @@
+/* Copyright 2009 Stories of Health <http://storiesofhealth.org/>
+ * Licensed under a Creative Commons Attribution-Noncommercial 3.0 United States License
+ * <http://creativecommons.org/licenses/by-nc/3.0/us/>
+ */
+
 var addthis_config = {
      ui_header_color: "#fff",
      ui_header_background: "#51392E"
 }
 
-var currentVideoUrl = false;
+var currentUrl = false;
 
 function loadVideo() {
-  var videoId = this.id.substr(6);
-  window.location = "/video/" + videoId;
+  window.location = "/video/" + this.id.substr(6);
 }
 
 function updateVideo() {
   var videoId = this.id.substr(6);
-  $("#video").load("/home/story/" + videoId, false, bindTags);
+  var url = "/home/story/" + videoId;
+  $.trackAjax("/video/" + videoId);
+  $("#video").load(url, false, bindTags);
 }
 
 function updateBrowser() {
-  $("#browser").load("/browser" + $(this).attr("href"), false, bindVideos);
+  var url = "/browser" + $(this).attr("href");
+  $.trackAjax($(this).attr("href"));
+  $("#browser").load(url, false, bindVideos);
   return false;
 }
 
@@ -34,14 +42,16 @@ function bindVideos() {
   $('.items .video-story').each(function(){
     $(this).bind("click", updateVideo);
   });
+  //$('.items .video-story').track({skip_internal:false});
   initScrollable();
 }
 
 function bindTags() {
-  addthis.button(".addthis_button", {}, {url: currentVideoUrl})
+  addthis.button(".addthis_button", {}, {url: currentUrl})
   $('.tag').each(function(){
     $(this).bind("click", updateBrowser);
   });
+  //$('.tag').track({skip_internal:false});
 }
 
 function initScrollable() {
@@ -51,7 +61,11 @@ function initScrollable() {
 	  size: itemCount,
 	  speed: 1200
 	});     
-	$("div.scrollable").scrollable().seekTo(0);
+	
+	// don't call this on the front page or static pages
+	if ($("div.scrollable").length) { 
+	  $("div.scrollable").scrollable().seekTo(0);
+  }
 }
 
 $(function() {         

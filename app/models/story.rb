@@ -4,6 +4,8 @@ class Story < ActiveRecord::Base
   def image_id
     "#{first_name}-#{id}.jpg".downcase
   end
-  
-  
+
+  def city_tag
+    "/from/#{self.city.downcase.gsub(' ', '')}"
+  end  
 end

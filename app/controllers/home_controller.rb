@@ -35,7 +35,7 @@ class HomeController < ApplicationController
   end
  
   def from
-    @stories = Story.find(:all, :conditions => ["city = ?", params[:id]])
+    @stories = Story.find(:all, :conditions => ["REPLACE(city, ' ', '') = ? OR city = ?", params[:id], params[:id]])
     return specified
   end
   
@@ -76,6 +76,6 @@ class HomeController < ApplicationController
     @subtitle = "#{@story.first_name}’s story"
 
     @browser = false
-    render :action => "video", :layout => false
+    render :action => "video", :layout => false, :track => true
   end  
 end
