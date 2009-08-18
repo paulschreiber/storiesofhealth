@@ -1,7 +1,5 @@
 class HomeController < ApplicationController
-  def index
-    story_count = 3
-    
+  def index(story_count=3)
     @stories = Story.find_by_sql("SELECT * FROM stories ORDER BY RAND() LIMIT #{story_count}")
     @story = @stories.first
     @selected_stories = @stories[1..(story_count+1)]

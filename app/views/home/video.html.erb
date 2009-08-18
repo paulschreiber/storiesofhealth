@@ -16,8 +16,10 @@
 
 </div>
 <script type="text/javascript" charset="utf-8">
+// <![CDATA[
 currentUrl = '<%= permalink(@story) %>';	
 $('title').text('<%= "#{@story.first_name}’s story" %>');
+// ]]>
 </script>
 
 <% if @browser %>

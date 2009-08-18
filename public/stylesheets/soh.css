@@ -89,7 +89,7 @@ input.button:hover {
 
 /* ------ videos ------------------------------- */
 div.selected-container {
-  margin-bottom: 4em;
+  margin-bottom: 5em;
   height: 300px;
   clear: both;
 }
@@ -214,7 +214,7 @@ div#footer {
 }
 
 div#footer ul.site {
-  margin-top: 3em;
+  margin-top: 1.5em;
   margin-bottom: 0.5em;
   border-top: 1px dotted #51392E;
   padding: 0;
