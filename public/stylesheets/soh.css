@@ -130,17 +130,19 @@ div.scrollable div.items {
   position: absolute; 
 } 
 
+/* Firefox Flashblock plugin */
+div.video[role='button'] {
+  height: 344px ! important;
+  width: 425px ! important;
+}
+
 div.share,
-div.video div[role='button'],
-div.video object,
-div.video embed {
+object.video {
   margin: auto;
   width: 425px;
 }
 
-div.video div[role='button'],
-div.video object,
-div.video embed {
+object.video {
   display: block;
   height: 344px;
 }
