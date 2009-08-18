@@ -17,9 +17,6 @@
 </div>
 <script type="text/javascript" charset="utf-8">
 currentUrl = '<%= permalink(@story) %>';	
-<%- if 0 && RAILS_ENV == "production" && params[:action] == "story" # AJAX load -%>
-pageTracker._trackPageview(currentUrl);
-<%- end -%>
 </script>
 
 <% if @browser %>

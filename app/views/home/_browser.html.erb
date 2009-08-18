@@ -11,10 +11,3 @@
 	</div><!-- scrollable -->
 <a class="nextPage"></a> 
 </div>
-
-<%- if 0 && RAILS_ENV == "production" && params[:action] == "browser" # AJAX load -%>
-<script type="text/javascript" charset="utf-8">
-currentUrl = '<%= "/#{params[:q]}/#{params[:id]}" %>';	
-pageTracker._trackPageview(currentUrl);
-</script>
-<%- end -%>

@@ -42,7 +42,6 @@ function bindVideos() {
   $('.items .video-story').each(function(){
     $(this).bind("click", updateVideo);
   });
-  //$('.items .video-story').track({skip_internal:false});
   initScrollable();
 }
 
@@ -51,7 +50,6 @@ function bindTags() {
   $('.tag').each(function(){
     $(this).bind("click", updateBrowser);
   });
-  //$('.tag').track({skip_internal:false});
 }
 
 function initScrollable() {
