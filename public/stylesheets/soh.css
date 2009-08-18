@@ -75,9 +75,9 @@ input.button {
   font-size: 1.5em;
   color: white;
   background: #AF243F;
-  margin-left: 400px;
   margin-top: 20px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border: none;
   padding: 0.2em;
   cursor: pointer;
@@ -99,22 +99,20 @@ div.scrollable {
   width: 600px;
   position: relative; 
   overflow: hidden;
-  white-space: nowrap;
-  float: left;
 }
 
 div.browser {
-  margin-top: 9em;
+  margin: 2em auto auto;
   border-bottom: 1px solid #999;
   height: 170px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 680px;
 }
 
 div.video {
-  width: 425px;
-  height: 344px;
-  margin: auto;
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
 }
 
 div.navi a, a.prevPage, a.nextPage {
@@ -122,21 +120,36 @@ div.navi a, a.prevPage, a.nextPage {
   border: none;
 }
 
-div.browser a.prevPage,
-div.browser a.nextPage {
+a.prevPage,
+a.nextPage {
   margin-top: 80px;
 }
 
 div.scrollable div.items { 
-    width: 20000em; 
-    position:absolute; 
+  width: 20000em; 
+  position: absolute; 
 } 
+
+div.share,
+div.video div[role='button'],
+div.video object,
+div.video embed {
+  margin: auto;
+  width: 425px;
+}
+
+div.video div[role='button'],
+div.video object,
+div.video embed {
+  display: block;
+  height: 344px;
+}
 
 div.video-story-medium,
 div.video-story { 
-    cursor: pointer;
-    float: left; 
-    -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(white));
+  cursor: pointer;
+  float: left; 
+  -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(white));
 } 
 
 div.video-story {
@@ -144,6 +157,7 @@ div.video-story {
   height: 150px;
 }
 
+/* front page, allow for reflection */
 div.selected-stories div.video-story {
   margin-bottom: 15px;
 }
@@ -168,10 +182,6 @@ div.video-story div.play {
   background: url('/images/play-small.png') no-repeat;
   margin-top: 88px;
   margin-left: 75px;
-}
-
-div.items div.active { 
-    background-color: #eee; 
 }
 
 a.addthis_button_compact {

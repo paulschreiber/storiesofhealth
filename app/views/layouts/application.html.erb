@@ -11,16 +11,16 @@
 	<%= javascript_include_tag "jquery-1.3.2.js" %>
 	<%= javascript_include_tag "jquery.tools.scrollable-1.0.5.js" %>
 	<%= javascript_include_tag "jquery.mousewheel.js" %>
+	<%= javascript_include_tag "jquery.google-analytics.js" %>
+	<%= javascript_include_tag "addthis_widget.js" %>
 	<%- else -%>
 	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" %>
-	<%= javascript_include_tag "jquery.tools.scrollable-1.0.5.min.js" %>
-	<%= javascript_include_tag "jquery.mousewheel.min.js" %>
-	<%- end -%>
+	<%= javascript_include_tag "jquery.helpers.min.js" %>
 	<%= javascript_include_tag "http://s7.addthis.com/js/250/addthis_widget.js?pub=storiesofhealth" %>
-	<%= javascript_include_tag "jquery.google-analytics.js" %>
+	<%- end -%>
 	<%= javascript_include_tag "soh.js" %>
 
-	<%- if RAILS_ENV != "production" -%>
+	<%- if RAILS_ENV == "production" -%>
 	<script type="text/javascript" charset="utf-8">
 	// <![CDATA[
 	$.trackPage("UA-1895263-5");
@@ -41,6 +41,7 @@
 	
 			<p>To fully understand how severe of a crisis we’re in, people from all over California told us about their experiences with a system in dire need of reform.</p>
 
+			<p><input class="button" type="button" value="Take Action &#9658;" onclick="window.location='<%= url_for(:action => "action") %>'"></p>
 			</div>		
 		</div>
 	

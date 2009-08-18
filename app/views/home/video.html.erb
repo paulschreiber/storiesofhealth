@@ -4,7 +4,8 @@
 		<param name="movie" value="http://www.youtube.com/v/<%= @story.youtube_id %>"></param>
 		<param name="allowFullScreen" value="true"></param>
 		<param name="allowscriptaccess" value="always"></param>
-		<embed src="http://www.youtube.com/v/<%= @story.youtube_id %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+		<embed src="http://www.youtube.com/v/<%= @story.youtube_id %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+		</object>
 
 		<div class="share">
 			<p>
@@ -13,15 +14,16 @@
 			<p>See more stories about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
 			</p>
 		</div>
-
 </div>
+
+<%- if params[:action] == "story" #AJAX load -%>
 <script type="text/javascript" charset="utf-8">
 // <![CDATA[
 currentUrl = '<%= permalink(@story) %>';	
 $('title').text('<%= "#{@story.first_name}’s story" %>');
 // ]]>
 </script>
-
+<%- end -%>
 <% if @browser %>
 <%= render :partial => "browser" %>
 <% end %>
