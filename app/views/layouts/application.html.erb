@@ -41,8 +41,9 @@
 			<p>Health care in the United States is broken.</p>
 	
 			<p>To fully understand how severe of a crisis we&rsquo;re in, people from all over California told us about their experiences with a system in dire need of reform.</p>
-
+			<%- if params[:action] != "action" -%>
 			<p><input class="button" type="button" value="Take Action &#9658;" onclick="window.location='<%= url_for(:action => "action") %>'" /></p>
+			<%- end -%>
 			</div>		
 		</div>
 	
