@@ -6,7 +6,7 @@
 
 		<div class="share">
 			<p>
-			<a href="http://www.addthis.com/bookmark.php" class="addthis_button">Share <%= @story.first_name %>’s story</a> with your friends. <a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
+			<a href="http://www.addthis.com/bookmark.php" class="addthis_button">Share <%= @story.first_name %>&rsquo;s story</a> with your friends. <a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
 			
 			<p>See more stories about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
 			</p>
@@ -17,7 +17,7 @@
 <script type="text/javascript" charset="utf-8">
 // <![CDATA[
 currentUrl = '<%= permalink(@story) %>';	
-$('title').text('<%= "Stories of Health » #{@story.first_name}’s story" %>');
+$('title').html('<%= "Stories of Health &raquo; #{@story.first_name}&rsquo;s story" %>');
 // ]]>
 </script>
 <%- end -%>

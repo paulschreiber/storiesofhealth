@@ -3,23 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Stories of Health » <%= @subtitle %></title>
+	<title>Stories of Health &raquo; <%= @subtitle %></title>
 	<meta name="keywords" content="healthcare, health, care, broken, insurance, reform, story, stories, video, cancer, diabetes, medicare, medical, debt, public option, unemployed" />
-	<meta name="description" content="Hear stories from people who have suffered because of the United States’ broken health care system." />
-	<%= stylesheet_link_tag "soh.css" %>
-	<%= stylesheet_link_tag "scrollable-navig.css" %>
+	<meta name="description" content="Hear stories from people who have suffered because of the United States&rsquo; broken health care system." />
+	<%= stylesheet_link_tag "soh.css", :charset => "utf-8" %>
+	<%= stylesheet_link_tag "scrollable-navig.css", :charset => "utf-8" %>
 	<%- if RAILS_ENV == "development" -%>
-	<%= javascript_include_tag "jquery-1.3.2.js" %>
-	<%= javascript_include_tag "jquery.tools.scrollable-1.0.5.js" %>
-	<%= javascript_include_tag "jquery.mousewheel.js" %>
-	<%= javascript_include_tag "jquery.google-analytics.js" %>
-	<%= javascript_include_tag "addthis_widget.js" %>
+	<%= javascript_include_tag "jquery-1.3.2.js", :charset => "utf-8" %>
+	<%= javascript_include_tag "jquery.tools.scrollable-1.0.5.js", :charset => "utf-8" %>
+	<%= javascript_include_tag "jquery.mousewheel.js", :charset => "utf-8" %>
+	<%= javascript_include_tag "jquery.google-analytics.js", :charset => "utf-8" %>
+	<%= javascript_include_tag "addthis_widget.js", :charset => "utf-8" %>
 	<%- else -%>
-	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" %>
-	<%= javascript_include_tag "jquery.helpers.min.js" %>
-	<%= javascript_include_tag "http://s7.addthis.com/js/250/addthis_widget.js?pub=storiesofhealth" %>
+	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js", :charset => "utf-8" %>
+	<%= javascript_include_tag "jquery.helpers.min.js", :charset => "utf-8" %>
+	<%= javascript_include_tag "http://s7.addthis.com/js/250/addthis_widget.js?pub=storiesofhealth", :charset => "utf-8" %>
 	<%- end -%>
-	<%= javascript_include_tag "soh.js" %>
+	<%= javascript_include_tag "soh.js", :charset => "utf-8" %>
 
 	<%- if RAILS_ENV == "production" -%>
 	<script type="text/javascript" charset="utf-8">
@@ -40,7 +40,7 @@
 			<div id="about">
 			<p>Health care in the United States is broken.</p>
 	
-			<p>To fully understand how severe of a crisis we’re in, people from all over California told us about their experiences with a system in dire need of reform.</p>
+			<p>To fully understand how severe of a crisis we&rsquo;re in, people from all over California told us about their experiences with a system in dire need of reform.</p>
 
 			<p><input class="button" type="button" value="Take Action &#9658;" onclick="window.location='<%= url_for(:action => "action") %>'" /></p>
 			</div>		

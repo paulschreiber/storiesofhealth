@@ -27,7 +27,7 @@ class HomeController < ApplicationController
       @story = Story.find(:first, :conditions => ["id = ?", params[:id]])
     end
     @story = @stories.first if @story.nil?
-    @subtitle = "#{@story.first_name}’s story"
+    @subtitle = "#{@story.first_name}&rsquo;s story"
     
     @browser = true
   end
@@ -45,7 +45,7 @@ class HomeController < ApplicationController
   def specified
     @stories = Story.all if @stories.empty? 
     @story = @stories.first
-    @subtitle = "#{@story.first_name}’s story"
+    @subtitle = "#{@story.first_name}&rsquo;s story"
     
     @browser = true
     render :action => "video"
@@ -71,7 +71,7 @@ class HomeController < ApplicationController
       @story = Story.find(:first, :conditions => ["id = ?", params[:id]])
     end
     @story = Story.first if @story.nil?
-    @subtitle = "#{@story.first_name}’s story"
+    @subtitle = "#{@story.first_name}&rsquo;s story"
 
     @browser = false
     render :action => "video", :layout => false, :track => true
