@@ -1,4 +1,11 @@
 --- 
+tags_063: 
+  name: musician
+  created_at: 2009-08-25 04:55:12
+  category: occupation
+  updated_at: 2009-08-25 04:55:12
+  id: "63"
+  description: musicians
 tags_052: 
   name: social-security
   created_at: 2009-08-16 05:46:46
@@ -391,6 +398,13 @@ tags_006:
   updated_at: 2009-08-16 05:46:45
   id: "6"
   description: dealt with billing errors
+tags_062: 
+  name: depression
+  created_at: 2009-08-25 04:54:28
+  category: condition
+  updated_at: 2009-08-25 04:54:28
+  id: "62"
+  description: suffered from depression
 tags_051: 
   name: single-parent-family
   created_at: 2009-08-16 05:46:46
