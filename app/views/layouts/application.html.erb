@@ -6,7 +6,7 @@
 	<title>Stories of Health &raquo; <%= @subtitle %></title>
 	<meta name="keywords" content="healthcare, health, care, broken, insurance, reform, story, stories, video, cancer, diabetes, medicare, medical, debt, public option, unemployed" />
 	<meta name="description" content="Hear stories from people who have suffered because of the United States&rsquo; broken health care system." />
-	<%= stylesheet_link_tag "soh.css", "scrollable-navig.css", :charset => "utf-8", :cache => "cache/all" %>
+	<%= stylesheet_link_tag "soh.css", "scrollable-navig.css", :charset => "utf-8" %>
 	<%- if RAILS_ENV == "development" -%>
 	<%= javascript_include_tag "jquery-1.3.2.js", "jquery.tools.scrollable-1.0.5.js", "jquery.mousewheel.js", "jquery.google-analytics.js", "addthis_widget.js", "soh.js", :charset => "utf-8", :cache => "cache/all" %>
 	<%- else -%>
