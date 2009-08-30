@@ -41,6 +41,13 @@ tags_008:
   updated_at: 2009-08-16 05:46:45
   id: "8"
   description: were affected by the California budget cuts
+tags_064: 
+  name: self-employed
+  created_at: 2009-08-30 17:38:45
+  category: occupation
+  updated_at: 2009-08-30 17:38:45
+  id: "64"
+  description: are self-employed
 tags_053: 
   name: social-security-disability
   created_at: 2009-08-16 05:46:46
