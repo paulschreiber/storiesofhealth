@@ -6,7 +6,9 @@ stories_029:
   updated_at: 2009-08-17 08:37:40
   youtube_id: kjgUcCGR1zg
   id: "29"
+  sex: F
   last_name: Wright
+  age: 
   state: CA
   first_name: Alicia
 stories_018: 
@@ -16,7 +18,9 @@ stories_018:
   updated_at: 2009-08-17 09:29:53
   youtube_id: g63y5QQ4ckc
   id: "18"
+  sex: M
   last_name: Hunt
+  age: 
   state: CA
   first_name: Gerry
 stories_007: 
@@ -26,7 +30,9 @@ stories_007:
   updated_at: 2009-08-17 14:59:26
   youtube_id: lk-1QCSvDlY
   id: "7"
+  sex: F
   last_name: Meighan
+  age: 
   state: CA
   first_name: Melissa
 stories_030: 
@@ -36,7 +42,9 @@ stories_030:
   updated_at: 2009-08-17 09:19:45
   youtube_id: bH8APfJtxvQ
   id: "30"
+  sex: M
   last_name: Cohen
+  age: "62"
   state: CA
   first_name: Evered
 stories_019: 
@@ -46,7 +54,9 @@ stories_019:
   updated_at: 2009-08-17 09:10:17
   youtube_id: DaGB5qvHNeU
   id: "19"
+  sex: M
   last_name: Roberts
+  age: 
   state: CA
   first_name: Bruce
 stories_008: 
@@ -56,7 +66,9 @@ stories_008:
   updated_at: 2009-08-17 14:56:15
   youtube_id: lgIbPccFmU0
   id: "8"
+  sex: F
   last_name: Bellet
+  age: 
   state: CA
   first_name: Laurie
 stories_031: 
@@ -66,7 +78,9 @@ stories_031:
   updated_at: 2009-08-17 08:28:19
   youtube_id: Ih8awFU2ZMQ
   id: "31"
+  sex: M
   last_name: Ruch
+  age: 
   state: CA
   first_name: William
 stories_020: 
@@ -76,7 +90,9 @@ stories_020:
   updated_at: 2009-08-17 09:12:32
   youtube_id: r72rUsjdRgQ
   id: "20"
+  sex: F
   last_name: Coombs
+  age: 
   state: CA
   first_name: Elaine
 stories_009: 
@@ -86,7 +102,9 @@ stories_009:
   updated_at: 2009-08-17 14:53:20
   youtube_id: lhQWBhRE6bM
   id: "9"
+  sex: F
   last_name: Gilbert
+  age: 
   state: CA
   first_name: Judith
 stories_032: 
@@ -96,7 +114,9 @@ stories_032:
   updated_at: 2009-08-17 08:33:59
   youtube_id: VeKt-uqmLHc
   id: "32"
+  sex: F
   last_name: Glenn
+  age: "60"
   state: CA
   first_name: Madera
 stories_021: 
@@ -106,7 +126,9 @@ stories_021:
   updated_at: 2009-08-17 09:09:35
   youtube_id: CX-HND0ex0o
   id: "21"
+  sex: M
   last_name: Nelson
+  age: 
   state: CA
   first_name: Dale
 stories_010: 
@@ -116,7 +138,9 @@ stories_010:
   updated_at: 2009-08-17 14:54:49
   youtube_id: plzWHgv0ktI
   id: "10"
+  sex: F
   last_name: Rasmussen
+  age: 
   state: CA
   first_name: Kristen
 stories_033: 
@@ -126,7 +150,9 @@ stories_033:
   updated_at: 2009-08-25 04:51:55
   youtube_id: t0IJOZHI6MM
   id: "33"
+  sex: M
   last_name: Page
+  age: "46"
   state: CA
   first_name: Gregory
 stories_022: 
@@ -136,7 +162,9 @@ stories_022:
   updated_at: 2009-08-17 15:07:00
   youtube_id: 211bLgFfZxc
   id: "22"
+  sex: M
   last_name: Narang
+  age: 
   state: CA
   first_name: Rajan
 stories_011: 
@@ -146,7 +174,9 @@ stories_011:
   updated_at: 2009-08-17 15:10:18
   youtube_id: vOWjy88eqhk
   id: "11"
+  sex: F
   last_name: Aldrich
+  age: 
   state: CA
   first_name: Suzanne
 stories_034: 
@@ -156,7 +186,9 @@ stories_034:
   updated_at: 2009-08-30 17:35:26
   youtube_id: L2oAKPjAU5I
   id: "34"
+  sex: F
   last_name: Christian
+  age: "30"
   state: CA
   first_name: My
 stories_023: 
@@ -166,7 +198,9 @@ stories_023:
   updated_at: 2009-08-17 15:11:20
   youtube_id: ULQG4b91_8g
   id: "23"
+  sex: F
   last_name: Gerritz
+  age: 
   state: CA
   first_name: Teri
 stories_012: 
@@ -176,7 +210,9 @@ stories_012:
   updated_at: 2009-08-17 09:15:08
   youtube_id: ZrxucPxmbGI
   id: "12"
+  sex: F
   last_name: Pickron
+  age: 
   state: CA
   first_name: Eleanor
 stories_001: 
@@ -186,9 +222,23 @@ stories_001:
   updated_at: 2009-08-17 09:57:42
   youtube_id: Gq6MZAXPT_U
   id: "1"
+  sex: M
   last_name: Adolph
+  age: 
   state: CA
   first_name: Jeff
+stories_035: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-09-01 17:04:37
+  updated_at: 2009-09-01 17:04:37
+  youtube_id: 8lR1EWUOxtg
+  id: "35"
+  sex: M
+  last_name: Easterday
+  age: "53"
+  state: CA
+  first_name: John
 stories_024: 
   congressional_district: "9"
   city: Oakland
@@ -196,7 +246,9 @@ stories_024:
   updated_at: 2009-08-17 09:28:32
   youtube_id: MEgpui2lI4I
   id: "24"
+  sex: M
   last_name: Hill
+  age: 
   state: CA
   first_name: Forrest
 stories_013: 
@@ -206,7 +258,9 @@ stories_013:
   updated_at: 2009-08-17 15:02:02
   youtube_id: SZyJnJosOUo
   id: "13"
+  sex: F
   last_name: Stoliar
+  age: 
   state: CA
   first_name: Pati
 stories_002: 
@@ -216,9 +270,23 @@ stories_002:
   updated_at: 2009-08-17 09:09:56
   youtube_id: 7foqPn1DXtI
   id: "2"
+  sex: M
   last_name: Krugman
+  age: "55"
   state: CA
   first_name: Chuck
+stories_036: 
+  congressional_district: "11"
+  city: Stockton
+  created_at: 2009-09-01 17:05:35
+  updated_at: 2009-09-01 17:05:35
+  youtube_id: A0B1vJM3_2A
+  id: "36"
+  sex: F
+  last_name: Sanders
+  age: "62"
+  state: CA
+  first_name: Joyce
 stories_025: 
   congressional_district: "9"
   city: Oakland
@@ -226,7 +294,9 @@ stories_025:
   updated_at: 2009-08-17 14:57:23
   youtube_id: vpog7ZNh7UU
   id: "25"
+  sex: F
   last_name: Ratchford
+  age: 
   state: CA
   first_name: Lolita
 stories_014: 
@@ -236,7 +306,9 @@ stories_014:
   updated_at: 2009-08-17 09:45:54
   youtube_id: K1_mBQDdBd8
   id: "14"
+  sex: F
   last_name: Ehlers
+  age: 
   state: CA
   first_name: Jackie
 stories_003: 
@@ -246,9 +318,23 @@ stories_003:
   updated_at: 2009-08-17 09:10:40
   youtube_id: jRLPldqXqV0
   id: "3"
+  sex: F
   last_name: Sparks
+  age: "39"
   state: CA
   first_name: Amanda
+stories_037: 
+  congressional_district: "11"
+  city: San Ramon
+  created_at: 2009-09-01 17:06:32
+  updated_at: 2009-09-01 17:06:32
+  youtube_id: pKKAlsQl_Ls
+  id: "37"
+  sex: M
+  last_name: Gordon
+  age: "60"
+  state: CA
+  first_name: Michael
 stories_026: 
   congressional_district: "8"
   city: San Francisco
@@ -256,7 +342,9 @@ stories_026:
   updated_at: 2009-08-17 09:12:15
   youtube_id: L0Cq3qhFm3M
   id: "26"
+  sex: F
   last_name: Wesley Smith
+  age: 
   state: CA
   first_name: Diane
 stories_015: 
@@ -266,7 +354,9 @@ stories_015:
   updated_at: 2009-08-17 15:08:32
   youtube_id: n_pzfrgI2oU
   id: "15"
+  sex: F
   last_name: Davis
+  age: "55"
   state: CA
   first_name: Sandra
 stories_004: 
@@ -276,9 +366,23 @@ stories_004:
   updated_at: 2009-08-17 15:00:35
   youtube_id: 2suSOQa_EoU
   id: "4"
+  sex: M
   last_name: Peterson
+  age: 
   state: CA
   first_name: Michael
+stories_038: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-09-01 17:07:13
+  updated_at: 2009-09-01 17:07:13
+  youtube_id: 5eABeaVroNo
+  id: "38"
+  sex: F
+  last_name: Pendle
+  age: "32"
+  state: CA
+  first_name: Summer
 stories_027: 
   congressional_district: "8"
   city: San Francisco
@@ -286,7 +390,9 @@ stories_027:
   updated_at: 2009-08-17 15:18:21
   youtube_id: Vknv0cApMLA
   id: "27"
+  sex: F
   last_name: Rensch
+  age: "60"
   state: CA
   first_name: Margriet
 stories_016: 
@@ -296,7 +402,9 @@ stories_016:
   updated_at: 2009-08-17 09:39:11
   youtube_id: uJ8L7ormSVA
   id: "16"
+  sex: F
   last_name: Liu
+  age: "41"
   state: CA
   first_name: Grace
 stories_005: 
@@ -306,9 +414,23 @@ stories_005:
   updated_at: 2009-08-17 14:58:30
   youtube_id: WdX9XmtzAwE
   id: "5"
+  sex: F
   last_name: Baker
+  age: 
   state: CA
   first_name: Lynn
+stories_039: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-09-01 17:07:53
+  updated_at: 2009-09-01 22:52:28
+  youtube_id: m_0F05ZqRck
+  id: "39"
+  sex: M
+  last_name: Carter
+  age: "40"
+  state: CA
+  first_name: Tim
 stories_028: 
   congressional_district: "8"
   city: San Francisco
@@ -316,7 +438,9 @@ stories_028:
   updated_at: 2009-08-17 15:05:39
   youtube_id: 3PRoybSuVOU
   id: "28"
+  sex: M
   last_name: Fitzgerald
+  age: 
   state: CA
   first_name: Patrick
 stories_017: 
@@ -326,7 +450,9 @@ stories_017:
   updated_at: 2009-08-17 15:19:08
   youtube_id: 3uHXRxY-uf4
   id: "17"
+  sex: F
   last_name: Altieri
+  age: 
   state: CA
   first_name: Lisa
 stories_006: 
@@ -336,6 +462,8 @@ stories_006:
   updated_at: 2009-08-17 09:59:17
   youtube_id: CC-nkt6e6TE
   id: "6"
+  sex: F
   last_name: Pae
+  age: 
   state: CA
   first_name: Jennifer

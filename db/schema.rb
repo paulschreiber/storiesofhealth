@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090813041549) do
+ActiveRecord::Schema.define(:version => 20090831163855) do
 
   create_table "stories", :force => true do |t|
     t.string   "first_name"
@@ -20,12 +20,16 @@ ActiveRecord::Schema.define(:version => 20090813041549) do
     t.string   "youtube_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "age"
+    t.string   "sex"
   end
 
+  add_index "stories", ["age"], :name => "index_stories_on_age"
   add_index "stories", ["city"], :name => "index_stories_on_city"
   add_index "stories", ["congressional_district"], :name => "index_stories_on_congressional_district"
   add_index "stories", ["first_name"], :name => "index_stories_on_first_name"
   add_index "stories", ["last_name"], :name => "index_stories_on_last_name"
+  add_index "stories", ["sex"], :name => "index_stories_on_sex"
   add_index "stories", ["state"], :name => "index_stories_on_state"
 
   create_table "stories_tags", :id => false, :force => true do |t|
