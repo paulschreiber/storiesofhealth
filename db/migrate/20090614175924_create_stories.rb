@@ -15,6 +15,7 @@ class CreateStories < ActiveRecord::Migration
     add_index :stories, :city
     add_index :stories, :state
     add_index :stories, :congressional_district
+    add_index :stories, :youtube_id
   end
 
   def self.down

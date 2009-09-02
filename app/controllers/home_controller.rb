@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index(story_count=3)
-    @stories = Story.find_by_sql("SELECT * FROM stories ORDER BY RAND() LIMIT #{story_count}")
+    @stories = Story.find_by_sql("SELECT * FROM stories WHERE youtube_id IS NOT NULL ORDER BY RAND() LIMIT #{story_count}")
     @story = @stories.first
     @selected_stories = @stories[1..(story_count+1)]
     @subtitle = "Every face has a story"
@@ -20,11 +20,11 @@ class HomeController < ApplicationController
   
   
   def video
-    @stories = Story.all
+    @stories = Story.find(:all, :conditions => "youtube_id IS NOT NULL")
     if params[:id].nil?
-      @story = Story.first
+      @story = @stories.first
     else
-      @story = Story.find(:first, :conditions => ["id = ?", params[:id]])
+      @story = Story.find(:first, :conditions => ["youtube_id IS NOT NULL AND id = ?", params[:id]])
     end
     @story = @stories.first if @story.nil?
     @subtitle = "#{@story.first_name}&rsquo;s story"
@@ -33,12 +33,12 @@ class HomeController < ApplicationController
   end
  
   def from
-    @stories = Story.find(:all, :conditions => ["REPLACE(city, ' ', '') = ? OR city = ?", params[:id], params[:id]])
+    @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]])
     return specified
   end
   
   def tag
-    @stories = Story.find(:all, :conditions => ["tags.name = ?", params[:id]], :include => "tags")
+    @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags")
     return specified
   end
 
@@ -54,9 +54,9 @@ class HomeController < ApplicationController
   # AJAX thumbnail loader
   def browser
     if params[:q] == "tag"
-      @stories = Story.find(:all, :conditions => ["tags.name = ?", params[:id]], :include => "tags")
+      @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags")
     elsif params[:q] == "from"
-      @stories = Story.find(:all, :conditions => ["city = ?", params[:id]])
+      @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND city = ?", params[:id]])
     end
 
     @stories = Story.all if @stories.empty? 
@@ -66,9 +66,9 @@ class HomeController < ApplicationController
   # AJAX story loader
   def story
     if params[:id].nil?
-      @story = Story.first
+      @story = Story.find(:first, :conditions => "youtube_id IS NOT NULL")
     else
-      @story = Story.find(:first, :conditions => ["id = ?", params[:id]])
+      @story = Story.find(:first, :conditions => ["youtube_id IS NOT NULL AND id = ?", params[:id]])
     end
     @story = Story.first if @story.nil?
     @subtitle = "#{@story.first_name}&rsquo;s story"
