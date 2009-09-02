@@ -8,6 +8,7 @@ stories_029:
   id: "29"
   sex: F
   last_name: Wright
+  description: Alicia, a marine corps veteran, suffers from chronic back problems.
   age: 
   state: CA
   first_name: Alicia
@@ -20,6 +21,7 @@ stories_018:
   id: "18"
   sex: M
   last_name: Hunt
+  description: Gerry, a diabetic and a veteran, couldn't afford insurance, but gets covered by the VA.
   age: 
   state: CA
   first_name: Gerry
@@ -32,6 +34,7 @@ stories_007:
   id: "7"
   sex: F
   last_name: Meighan
+  description: Melissa, a nurse, wants to take care of patients, not do paperwork.
   age: 
   state: CA
   first_name: Melissa
@@ -44,6 +47,7 @@ stories_030:
   id: "30"
   sex: M
   last_name: Cohen
+  description: Evered's family's health care costs have more than tripled.
   age: "62"
   state: CA
   first_name: Evered
@@ -56,6 +60,7 @@ stories_019:
   id: "19"
   sex: M
   last_name: Roberts
+  description: Bruce is unemployed and uninsured and can't get his teeth (or his eyes) fixed.
   age: 
   state: CA
   first_name: Bruce
@@ -68,6 +73,7 @@ stories_008:
   id: "8"
   sex: F
   last_name: Bellet
+  description: Despite having insurance, Laurie's family is facing a $100,000 dental bill.
   age: 
   state: CA
   first_name: Laurie
@@ -80,6 +86,7 @@ stories_031:
   id: "31"
   sex: M
   last_name: Ruch
+  description: "Bill's care gets patients off disability. Insurance won't pay\xE2says it's not medically necessary."
   age: 
   state: CA
   first_name: William
@@ -92,6 +99,7 @@ stories_020:
   id: "20"
   sex: F
   last_name: Coombs
+  description: Elaine's sister insurance won't cover post-operative care for her hip replacement surgery.
   age: 
   state: CA
   first_name: Elaine
@@ -104,6 +112,7 @@ stories_009:
   id: "9"
   sex: F
   last_name: Gilbert
+  description: "Judith's family grew up next a nuclear facility. Much of that town \xE2 including dogs \xE2 has cancer."
   age: 
   state: CA
   first_name: Judith
@@ -116,6 +125,7 @@ stories_032:
   id: "32"
   sex: F
   last_name: Glenn
+  description: Madera can't get health insurance because she has the mother of all preexisting conditions.
   age: "60"
   state: CA
   first_name: Madera
@@ -128,6 +138,7 @@ stories_021:
   id: "21"
   sex: M
   last_name: Nelson
+  description: Dale was able to get his disability treated, thanks to medicare.
   age: 
   state: CA
   first_name: Dale
@@ -140,6 +151,7 @@ stories_010:
   id: "10"
   sex: F
   last_name: Rasmussen
+  description: Kristen can't afford insurance and hasn't seen a doctor in four years.
   age: 
   state: CA
   first_name: Kristen
@@ -152,6 +164,7 @@ stories_033:
   id: "33"
   sex: M
   last_name: Page
+  description: "Gregory, a musician, can afford treatment \xE2 only when he's on tour in Australia."
   age: "46"
   state: CA
   first_name: Gregory
@@ -164,6 +177,7 @@ stories_022:
   id: "22"
   sex: M
   last_name: Narang
+  description: "Rajan's family, despite having insurance, spends $10000+/year caring for his autistic brother "
   age: 
   state: CA
   first_name: Rajan
@@ -176,6 +190,7 @@ stories_011:
   id: "11"
   sex: F
   last_name: Aldrich
+  description: Suzanne wants to start a business, but can't do that and insure her family.
   age: 
   state: CA
   first_name: Suzanne
@@ -188,6 +203,7 @@ stories_034:
   id: "34"
   sex: F
   last_name: Christian
+  description: "Talk about indigestion: spicy food and no insurance left My with $7000 in health care debt."
   age: "30"
   state: CA
   first_name: My
@@ -200,6 +216,7 @@ stories_023:
   id: "23"
   sex: F
   last_name: Gerritz
+  description: Teri wants her son to grow up in a fair world, where the sick get taken care of.
   age: 
   state: CA
   first_name: Teri
@@ -212,6 +229,7 @@ stories_012:
   id: "12"
   sex: F
   last_name: Pickron
+  description: Eleanor used to travel the world. Health care costs have limited her to a five-mile radius.
   age: 
   state: CA
   first_name: Eleanor
@@ -224,6 +242,7 @@ stories_001:
   id: "1"
   sex: M
   last_name: Adolph
+  description: Jeff doesn't have health insurance, had to get treated in the ER and was overbilled by $800.
   age: 
   state: CA
   first_name: Jeff
@@ -236,6 +255,7 @@ stories_035:
   id: "35"
   sex: M
   last_name: Easterday
+  description: A motorcycle accident left John in chronic pain and a $900/month health care bill.
   age: "53"
   state: CA
   first_name: John
@@ -248,6 +268,7 @@ stories_024:
   id: "24"
   sex: M
   last_name: Hill
+  description: Forrest has been fighting for two years to get his arthritis treated.
   age: 
   state: CA
   first_name: Forrest
@@ -260,6 +281,7 @@ stories_013:
   id: "13"
   sex: F
   last_name: Stoliar
+  description: Pati, an RN, can't afford her $872-per-month insurance bill.
   age: 
   state: CA
   first_name: Pati
@@ -272,6 +294,7 @@ stories_002:
   id: "2"
   sex: M
   last_name: Krugman
+  description: Chuck, who was born blind, relies on medicare. But it's not enough.
   age: "55"
   state: CA
   first_name: Chuck
@@ -284,6 +307,7 @@ stories_036:
   id: "36"
   sex: F
   last_name: Sanders
+  description: An on-the-job injury forced Joyce into early retirement with only partial benefits.
   age: "62"
   state: CA
   first_name: Joyce
@@ -296,6 +320,7 @@ stories_025:
   id: "25"
   sex: F
   last_name: Ratchford
+  description: Lolita lost her job, and her insurance and is forced to ration her remaining medicine.
   age: 
   state: CA
   first_name: Lolita
@@ -308,6 +333,7 @@ stories_014:
   id: "14"
   sex: F
   last_name: Ehlers
+  description: Jackie's husband was kept in the hospital for 11 days, and in debt for years.
   age: 
   state: CA
   first_name: Jackie
@@ -320,6 +346,7 @@ stories_003:
   id: "3"
   sex: F
   last_name: Sparks
+  description: "When she was a student, uninsured Amanda was sent to the ER\xE2and left untreated."
   age: "39"
   state: CA
   first_name: Amanda
@@ -332,6 +359,7 @@ stories_037:
   id: "37"
   sex: M
   last_name: Gordon
+  description: Michael's family's health insurance went from $300/month to $2000/month.
   age: "60"
   state: CA
   first_name: Michael
@@ -344,6 +372,7 @@ stories_026:
   id: "26"
   sex: F
   last_name: Wesley Smith
+  description: Diane's son's leukemia left him with a million dollars in medical debt.
   age: 
   state: CA
   first_name: Diane
@@ -356,6 +385,7 @@ stories_015:
   id: "15"
   sex: F
   last_name: Davis
+  description: "Sandra's niece died during a \xE2routine\xE2 operation."
   age: "55"
   state: CA
   first_name: Sandra
@@ -368,6 +398,7 @@ stories_004:
   id: "4"
   sex: M
   last_name: Peterson
+  description: Michael's mother has schizophrenia and relies on state disability to get by.
   age: 
   state: CA
   first_name: Michael
@@ -380,6 +411,7 @@ stories_038:
   id: "38"
   sex: F
   last_name: Pendle
+  description: Summer, after 15 years of work, still can't get health insurance.
   age: "32"
   state: CA
   first_name: Summer
@@ -392,6 +424,7 @@ stories_027:
   id: "27"
   sex: F
   last_name: Rensch
+  description: Margriet, having lost her insurance, is now legally blind.
   age: "60"
   state: CA
   first_name: Margriet
@@ -404,6 +437,7 @@ stories_016:
   id: "16"
   sex: F
   last_name: Liu
+  description: Grace lost her husband. And her health insurance.
   age: "41"
   state: CA
   first_name: Grace
@@ -416,6 +450,7 @@ stories_005:
   id: "5"
   sex: F
   last_name: Baker
+  description: Lynn found her dream job, lost her insurance and never got her COBRA coverage.
   age: 
   state: CA
   first_name: Lynn
@@ -428,6 +463,7 @@ stories_039:
   id: "39"
   sex: M
   last_name: Carter
+  description: An attorney, Tim knows how hard it is for disabled clients to get the help they need.
   age: "40"
   state: CA
   first_name: Tim
@@ -440,6 +476,7 @@ stories_028:
   id: "28"
   sex: M
   last_name: Fitzgerald
+  description: A robbery left Patrick with a chronic illness that almost killed him.
   age: 
   state: CA
   first_name: Patrick
@@ -452,6 +489,7 @@ stories_017:
   id: "17"
   sex: F
   last_name: Altieri
+  description: An MS scare left Lisa wondering if how she'd be able to keep her home.
   age: 
   state: CA
   first_name: Lisa
@@ -464,6 +502,7 @@ stories_006:
   id: "6"
   sex: F
   last_name: Pae
+  description: Jennifer's father died. Without health insurance.
   age: 
   state: CA
   first_name: Jennifer

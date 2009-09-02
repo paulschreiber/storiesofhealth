@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090831163855) do
+ActiveRecord::Schema.define(:version => 20090902071818) do
 
   create_table "stories", :force => true do |t|
     t.string   "first_name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20090831163855) do
     t.datetime "updated_at"
     t.integer  "age"
     t.string   "sex"
+    t.string   "description"
   end
 
   add_index "stories", ["age"], :name => "index_stories_on_age"
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20090831163855) do
   add_index "stories", ["last_name"], :name => "index_stories_on_last_name"
   add_index "stories", ["sex"], :name => "index_stories_on_sex"
   add_index "stories", ["state"], :name => "index_stories_on_state"
+  add_index "stories", ["youtube_id"], :name => "youtube_id"
 
   create_table "stories_tags", :id => false, :force => true do |t|
     t.integer "story_id", :null => false
