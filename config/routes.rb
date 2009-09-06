@@ -35,6 +35,7 @@ ActionController::Routing::Routes.draw do |map|
   map.home 'about', :controller => "home", :action => 'about'
   map.home 'share', :controller => "home", :action => 'share'
   map.home 'action', :controller => "home", :action => 'action'
+  map.home 'stories', :controller => "home", :action => 'stories'
   map.home 'video/:id', :controller => "home", :action => 'video'
   map.home 'from/:id', :controller => "home", :action => 'from'
   map.home 'tag/:id', :controller => "home", :action => 'tag'

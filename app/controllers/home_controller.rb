@@ -18,15 +18,19 @@ class HomeController < ApplicationController
     @subtitle = "Share Your Story"
   end
   
+  def stories
+    @stories = Story.find(:all, :conditions => "youtube_id IS NOT NULL", :order => "first_name")
+    @subtitle = "Every face has a story"
+    render :action => "list" and return
+  end
   
   def video
-    @stories = Story.find(:all, :conditions => "youtube_id IS NOT NULL", :order => "first_name")
     if params[:id].nil?
-      @subtitle = "Every face has a story"
-      render :action => "list" and return
-    else
-      @story = Story.find(:first, :conditions => ["youtube_id IS NOT NULL AND id = ?", params[:id]])
-    end
+      redirect_to :action => :stories
+    end 
+
+    @stories = Story.find(:all, :conditions => "youtube_id IS NOT NULL", :order => "first_name")
+    @story = Story.find(:first, :conditions => ["youtube_id IS NOT NULL AND id = ?", params[:id]])
     @story = @stories.first if @story.nil?
     @subtitle = "#{@story.first_name}&rsquo;s story"
     
