@@ -341,6 +341,9 @@ stories_tags_032:
 stories_tags_004: 
   tag_id: "29"
   story_id: "16"
+stories_tags_175: 
+  tag_id: "76"
+  story_id: "40"
 stories_tags_147: 
   tag_id: "59"
   story_id: "34"
@@ -356,6 +359,9 @@ stories_tags_033:
 stories_tags_005: 
   tag_id: "40"
   story_id: "11"
+stories_tags_176: 
+  tag_id: "60"
+  story_id: "41"
 stories_tags_148: 
   tag_id: "15"
   story_id: "34"
@@ -371,6 +377,9 @@ stories_tags_006:
 stories_tags_090: 
   tag_id: "7"
   story_id: "27"
+stories_tags_177: 
+  tag_id: "16"
+  story_id: "40"
 stories_tags_149: 
   tag_id: "23"
   story_id: "34"
@@ -386,6 +395,9 @@ stories_tags_007:
 stories_tags_091: 
   tag_id: "48"
   story_id: "14"
+stories_tags_178: 
+  tag_id: "77"
+  story_id: "41"
 stories_tags_064: 
   tag_id: "14"
   story_id: "26"
@@ -398,6 +410,9 @@ stories_tags_008:
 stories_tags_092: 
   tag_id: "17"
   story_id: "8"
+stories_tags_179: 
+  tag_id: "78"
+  story_id: "41"
 stories_tags_120: 
   tag_id: "4"
   story_id: "22"
@@ -452,6 +467,9 @@ stories_tags_096:
 stories_tags_068: 
   tag_id: "24"
   story_id: "26"
+stories_tags_180: 
+  tag_id: "79"
+  story_id: "41"
 stories_tags_152: 
   tag_id: "64"
   story_id: "34"

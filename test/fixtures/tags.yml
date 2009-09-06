@@ -223,6 +223,13 @@ tags_054:
   updated_at: 2009-08-16 05:46:46
   id: "54"
   description: state disability
+tags_076: 
+  name: brain-tumor
+  created_at: 2009-09-06 22:20:34
+  category: condition
+  updated_at: 2009-09-06 22:20:34
+  id: "76"
+  description: had a brain tumor
 tags_013: 
   name: credit-problem
   created_at: 2009-08-16 05:46:45
@@ -244,6 +251,13 @@ tags_055:
   updated_at: 2009-08-16 05:46:46
   id: "55"
   description: had a stroke
+tags_077: 
+  name: prostate
+  created_at: 2009-09-06 22:25:42
+  category: condition
+  updated_at: 2009-09-06 22:50:24
+  id: "77"
+  description: had a prostate problem
 tags_014: 
   name: death
   created_at: 2009-08-16 05:46:45
@@ -265,6 +279,13 @@ tags_056:
   updated_at: 2009-08-16 05:46:46
   id: "56"
   description: teachers
+tags_078: 
+  name: low-blood-pressure
+  created_at: 2009-09-06 22:25:59
+  category: condition
+  updated_at: 2009-09-06 22:25:59
+  id: "78"
+  description: had low blood pressure
 tags_015: 
   name: debt
   created_at: 2009-08-16 05:46:45
@@ -286,6 +307,13 @@ tags_057:
   updated_at: 2009-08-16 05:46:46
   id: "57"
   description: traveled overseas
+tags_079: 
+  name: icu-psychosis
+  created_at: 2009-09-06 22:51:40
+  category: condition
+  updated_at: 2009-09-06 22:51:40
+  id: "79"
+  description: had ICU psychosis
 tags_016: 
   name: denied-coverage
   created_at: 2009-08-16 05:46:45

@@ -1,4 +1,17 @@
 --- 
+stories_040: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-09-06 21:58:09
+  updated_at: 2009-09-06 22:05:50
+  youtube_id: tUrf2aL1aDs
+  id: "40"
+  sex: F
+  last_name: Diaz
+  description: Anne's insurance company tried to deny coverage...for her brain tumor.
+  age: "28"
+  state: CA
+  first_name: Anne
 stories_029: 
   congressional_district: "9"
   city: Oakland
@@ -38,6 +51,19 @@ stories_007:
   age: 
   state: CA
   first_name: Melissa
+stories_041: 
+  congressional_district: "12"
+  city: Daly City
+  created_at: 2009-09-06 22:00:38
+  updated_at: 2009-09-06 22:14:47
+  youtube_id: Hm8rQRqbv1o
+  id: "41"
+  sex: F
+  last_name: Galliani
+  description: An insurance company pressured Diane's family to pull the plug on her father.
+  age: "66"
+  state: CA
+  first_name: Diane
 stories_030: 
   congressional_district: "8"
   city: San Francisco
@@ -315,12 +341,12 @@ stories_025:
   congressional_district: "9"
   city: Oakland
   created_at: 2009-08-16 05:46:39
-  updated_at: 2009-08-17 14:57:23
+  updated_at: 2009-09-02 21:25:43
   youtube_id: vpog7ZNh7UU
   id: "25"
   sex: F
   last_name: Ratchford
-  description: Lolita lost her job, and her insurance and is forced to ration her remaining medicine.
+  description: Lolita lost her job and her insurance and is forced to ration her remaining medicine.
   age: 
   state: CA
   first_name: Lolita
