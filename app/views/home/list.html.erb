@@ -1,0 +1,11 @@
+<ul class="all-stories">
+<%- @stories.each do |s| -%>
+	<li>
+		<%= content_tag(:div, "<div class='play'></div>", :id => "story-#{s.id}", :class => "video-story", :style => "background: url('/images/headshots-small/#{s.image_id}');") %>
+		<div class="description">
+		<h3><a href="<%= permalink(s) %>"><%= s.first_name %></a></h3>
+		<p><%= s.description %></p>
+		</div>
+	</li>
+<%- end -%>
+</ul>

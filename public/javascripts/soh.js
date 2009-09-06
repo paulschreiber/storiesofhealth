@@ -16,7 +16,7 @@ function loadVideo() {
 
 function updateVideo() {
   var videoId = this.id.substr(6);
-  var url = "/home/story/" + videoId;
+  var url = "/home/fetch_story/" + videoId;
   $.trackAjax("/video/" + videoId);
   $("#video").load(url, false, bindTags);
 }
@@ -26,6 +26,12 @@ function updateBrowser() {
   $.trackAjax($(this).attr("href"));
   $("#browser").load(url, false, bindVideos);
   return false;
+}
+
+function bindIndexPageVideos() {
+  $('.all-stories .video-story').each(function(){
+    $(this).bind("click", loadVideo);
+  });
 }
 
 function bindFrontPageVideos() {
@@ -68,6 +74,7 @@ function initScrollable() {
 
 $(function() {         
 	  bindFrontPageVideos();
+	  bindIndexPageVideos();
 		bindVideos();
     bindTags();
 }); 

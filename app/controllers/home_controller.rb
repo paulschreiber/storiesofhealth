@@ -20,9 +20,10 @@ class HomeController < ApplicationController
   
   
   def video
-    @stories = Story.find(:all, :conditions => "youtube_id IS NOT NULL")
+    @stories = Story.find(:all, :conditions => "youtube_id IS NOT NULL", :order => "first_name")
     if params[:id].nil?
-      @story = @stories.first
+      @subtitle = "Every face has a story"
+      render :action => "list" and return
     else
       @story = Story.find(:first, :conditions => ["youtube_id IS NOT NULL AND id = ?", params[:id]])
     end
@@ -64,7 +65,7 @@ class HomeController < ApplicationController
   end
   
   # AJAX story loader
-  def story
+  def fetch_story
     if params[:id].nil?
       @story = Story.find(:first, :conditions => "youtube_id IS NOT NULL")
     else

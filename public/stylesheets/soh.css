@@ -216,6 +216,38 @@ a.addthis_button_compact {
   border-bottom: none;
 }
 
+ul.all-stories {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 720px;
+}
+
+ul.all-stories li {
+  width: 350px;
+  height: 160px;
+
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  margin-bottom: 1.5em;
+}
+
+ul.all-stories div.description {
+  height: 160px;
+  width: 150px;
+  float: left;
+  padding-top: 2em;
+  
+}
+
+ul.all-stories li p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  vertical-align: bottom;
+}
+
 /* ------ layout ------------------------------- */
 div#about {
   padding-left: 1.3em;
