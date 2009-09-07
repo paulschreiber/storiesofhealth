@@ -15,17 +15,8 @@ module HomeHelper
       klass = "tag"
     end
     
-    all_tags.each do |t|
-      pretty_description = t.description
-      if t.category == "care"
-        pretty_description = "cared for a #{t.description}"
-      elsif t.category == "insurance"
-        pretty_description = "are covered by #{t.description}"
-      elsif t.category == "occupation"
-        pretty_description = "are #{t.description}"
-      end
-
-      tag_list << link_to(pretty_description, {:action => :tag, :id => t.name}, :class => klass) 
+    all_tags.each do |t|      
+      tag_list << link_to(t.description_phrase, {:action => :tag, :id => t.name}, :class => klass) 
     end
     @tag_sentence = tag_list.to_sentence(:last_word_connector => " and ")
     

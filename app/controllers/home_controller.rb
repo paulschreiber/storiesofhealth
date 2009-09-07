@@ -24,6 +24,10 @@ class HomeController < ApplicationController
     render :action => "list" and return
   end
   
+  def v
+    redirect_to :action => :video
+  end
+  
   def video
     if params[:id].nil?
       redirect_to :action => :stories
@@ -33,17 +37,22 @@ class HomeController < ApplicationController
     @story = Story.find(:first, :conditions => ["youtube_id IS NOT NULL AND id = ?", params[:id]])
     @story = @stories.first if @story.nil?
     @subtitle = "#{@story.first_name}&rsquo;s story"
+    @description = @story.description
     
     @browser = true
   end
  
   def from
     @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]])
+    @description = "Hear health care stories from people in #{@stories.first.city}, #{@stories.first.state}."
     return specified
   end
   
   def tag
     @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags")
+    @tag = Tag.find(:all, :conditions => ["tags.name = ?", params[:id]])
+    @tag = @stories.first.tags.first if @tag.nil?
+    @description = "Hear health care stories from people who #{@tag.first.description_phrase}."
     return specified
   end
 
