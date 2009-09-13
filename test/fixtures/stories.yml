@@ -8,7 +8,7 @@ stories_040:
   id: "40"
   sex: F
   last_name: Diaz
-  description: Anne&rsquo;s insurance company tried to deny coverage&hellip;for her brain tumor.
+  description: Anne&rsquo;s insurance company tried to deny coverage...for her brain tumor.
   age: "28"
   state: CA
   first_name: Anne
@@ -103,6 +103,19 @@ stories_008:
   age: 
   state: CA
   first_name: Laurie
+stories_042: 
+  congressional_district: "14"
+  city: Redwood City
+  created_at: 2009-09-13 02:52:01
+  updated_at: 2009-09-13 03:01:37
+  youtube_id: hQt3fjGa-RY
+  id: "42"
+  sex: M
+  last_name: Tarzanin
+  description: Frank rode along with his injured friend in the ambulance. They billed him, too.
+  age: "44"
+  state: CA
+  first_name: Frank
 stories_031: 
   congressional_district: "9"
   city: Oakland
@@ -112,7 +125,7 @@ stories_031:
   id: "31"
   sex: M
   last_name: Ruch
-  description: Bill&rsquo;s care gets patients off disability. Insurance won&rsquo;t pay&mdash;says it&rsquo;s not medically necessary.
+  description: William&rsquo;s care gets patients off disability. Insurance won&rsquo;t pay&mdash;says it&rsquo;s not medically necessary
   age: 
   state: CA
   first_name: William
@@ -138,10 +151,23 @@ stories_009:
   id: "9"
   sex: F
   last_name: Gilbert
-  description: Judith&rsquo;s family grew up next to a nuclear facility. Much of that town&mdash;including dogs&mdash;has cancer.
+  description: Judith&rsquo;s family grew up next a nuclear facility. Much of that town&mdash;including dogs&mdash;has cancer.
   age: 
   state: CA
   first_name: Judith
+stories_043: 
+  congressional_district: "14"
+  city: Redwood City
+  created_at: 2009-09-13 02:56:39
+  updated_at: 2009-09-13 03:04:34
+  youtube_id: OTBADnc26cw
+  id: "43"
+  sex: F
+  last_name: Mogin
+  description: A car accident left Angela with nerve damage&mdash;and two hours a week of insurance paperwork.
+  age: "64"
+  state: CA
+  first_name: Angela
 stories_032: 
   congressional_district: "13"
   city: Hayward
@@ -203,7 +229,7 @@ stories_022:
   id: "22"
   sex: M
   last_name: Narang
-  description: "Rajan&rsquo;s family, despite having insurance, spends $10000+/year caring for his autistic brother "
+  description: Rajan&rsquo;s family, despite having insurance, spends $10000+/year caring for his autistic brother.
   age: 
   state: CA
   first_name: Rajan
