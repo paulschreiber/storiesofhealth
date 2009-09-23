@@ -8,4 +8,12 @@ class Story < ActiveRecord::Base
   def city_tag
     "/from/#{self.city.downcase.gsub(' ', '')}"
   end  
+  
+  def youtube_link
+    "http://youtube.com/watch?v=#{self.youtube_id}"
+  end
+  
+  def tweet
+    "#{self.description} #hcr #hc09 http://storiesofhealth.org/video/#{self.id}"
+  end
 end
