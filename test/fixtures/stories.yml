@@ -207,6 +207,19 @@ stories_010:
   age: 
   state: CA
   first_name: Kristen
+stories_044: 
+  congressional_district: "14"
+  city: Half Moon Bay
+  created_at: 2009-09-20 22:16:16
+  updated_at: 2009-09-24 07:18:55
+  youtube_id: _jTp1DZjRZc
+  id: "44"
+  sex: M
+  last_name: Haggerty
+  description: Dan knows from personal experience how important healthcare is to union members like himself.
+  age: "47"
+  state: CA
+  first_name: Dan
 stories_033: 
   congressional_district: "53"
   city: San Diego
@@ -246,6 +259,19 @@ stories_011:
   age: 
   state: CA
   first_name: Suzanne
+stories_045: 
+  congressional_district: "12"
+  city: Burlingame
+  created_at: 2009-09-20 22:17:27
+  updated_at: 2009-09-24 07:08:46
+  youtube_id: 5CIKKaGUCOw
+  id: "45"
+  sex: M
+  last_name: Ostergren
+  description: Christopher's sister, a pediatrician, is being squeezed by insurance companies from both ends.
+  age: "65"
+  state: CA
+  first_name: Christopher
 stories_034: 
   congressional_district: "11"
   city: Brentwood
@@ -298,6 +324,19 @@ stories_001:
   age: 
   state: CA
   first_name: Jeff
+stories_046: 
+  congressional_district: "9"
+  city: Oakland
+  created_at: 2009-09-20 22:18:34
+  updated_at: 2009-09-24 07:13:26
+  youtube_id: nskrd1hbyYc
+  id: "46"
+  sex: M
+  last_name: Holliday
+  description: Chris&rsquo; grandmother&rsquo;s insurance company refused to treat her lung cancer, a "preexisting condition."
+  age: "27"
+  state: CA
+  first_name: Chris
 stories_035: 
   congressional_district: "8"
   city: San Francisco
