@@ -398,7 +398,7 @@ stories_047:
   id: "47"
   sex: F
   last_name: Koren
-  description: Patricia's son&mdash;attacked on a trip overseas&mdash;was rescued by the French medical system.
+  description: Patricia&rsquo;s son&mdash;attacked on a trip overseas&mdash;was rescued by the French medical system.
   age: "64"
   state: CA
   first_name: Patricia
@@ -463,7 +463,7 @@ stories_048:
   id: "48"
   sex: F
   last_name: Singer
-  description: A dancer and photographer, Debra's agammaglobulinemia can't keep her down. But Blue Cross can.
+  description: A dancer and photographer, Debra&rsquo;s agammaglobulinemia can&rsquo;t keep her down. But Blue Cross can.
   age: 
   state: CA
   first_name: Debra
