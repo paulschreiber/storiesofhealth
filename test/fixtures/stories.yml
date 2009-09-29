@@ -268,7 +268,7 @@ stories_045:
   id: "45"
   sex: M
   last_name: Ostergren
-  description: Christopher's sister, a pediatrician, is being squeezed by insurance companies from both ends.
+  description: Christopher&rsquo;s sister, a pediatrician, is being squeezed by insurance companies from both ends.
   age: "65"
   state: CA
   first_name: Christopher
@@ -464,7 +464,7 @@ stories_048:
   sex: F
   last_name: Singer
   description: A dancer and photographer, Debra&rsquo;s agammaglobulinemia can&rsquo;t keep her down. But Blue Cross can.
-  age: 
+  age: "51"
   state: CA
   first_name: Debra
 stories_037: 
