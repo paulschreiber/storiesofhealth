@@ -389,6 +389,19 @@ stories_002:
   age: "55"
   state: CA
   first_name: Chuck
+stories_047: 
+  congressional_district: "8"
+  city: San Francisco
+  created_at: 2009-09-29 05:29:42
+  updated_at: 2009-09-29 05:38:37
+  youtube_id: Zf_J-1pmiOM
+  id: "47"
+  sex: F
+  last_name: Koren
+  description: Patricia's son&mdash;attacked on a trip overseas&mdash;was rescued by the French medical system.
+  age: "64"
+  state: CA
+  first_name: Patricia
 stories_036: 
   congressional_district: "11"
   city: Stockton
@@ -441,6 +454,19 @@ stories_003:
   age: "39"
   state: CA
   first_name: Amanda
+stories_048: 
+  congressional_district: "12"
+  city: Burlingame
+  created_at: 2009-09-29 05:34:22
+  updated_at: 2009-09-29 06:11:18
+  youtube_id: sehVTtmfvyo
+  id: "48"
+  sex: F
+  last_name: Singer
+  description: A dancer and photographer, Debra's agammaglobulinemia can't keep her down. But Blue Cross can.
+  age: 
+  state: CA
+  first_name: Debra
 stories_037: 
   congressional_district: "11"
   city: San Ramon
