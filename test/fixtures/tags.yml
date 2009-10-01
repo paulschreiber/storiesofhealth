@@ -1,4 +1,11 @@
 --- 
+tags_090: 
+  name: cant-afford
+  created_at: 2009-10-01 22:40:40
+  category: 
+  updated_at: 2009-10-01 22:40:40
+  id: "92"
+  description: cannot afford health insurance
 tags_089: 
   name: ucsf
   created_at: 2009-09-29 05:47:53
@@ -34,6 +41,13 @@ tags_047:
   updated_at: 2009-08-16 05:46:46
   id: "48"
   description: parents
+tags_091: 
+  name: ece
+  created_at: 2009-10-01 22:43:13
+  category: work with children
+  updated_at: 2009-10-01 22:43:13
+  id: "93"
+  description: 
 tags_070: 
   name: surgery
   created_at: 2009-09-02 00:59:05
@@ -69,6 +83,13 @@ tags_048:
   updated_at: 2009-08-16 05:46:46
   id: "49"
   description: cannot get insurance because of a preexisting condition
+tags_092: 
+  name: single-parent
+  created_at: 2009-10-01 22:43:33
+  category: are single parents
+  updated_at: 2009-10-01 22:43:33
+  id: "94"
+  description: 
 tags_071: 
   name: retired-early
   created_at: 2009-09-02 00:59:39
@@ -104,6 +125,13 @@ tags_049:
   updated_at: 2009-08-16 05:46:46
   id: "50"
   description: have schizophrenia
+tags_093: 
+  name: muscular-fibrosis
+  created_at: 2009-10-01 22:44:54
+  category: condition
+  updated_at: 2009-10-01 22:44:54
+  id: "95"
+  description: have muscular fibrosis
 tags_072: 
   name: accident
   created_at: 2009-09-02 01:01:33
