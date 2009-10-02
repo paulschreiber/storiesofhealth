@@ -1,4 +1,17 @@
 --- 
+stories_051: 
+  congressional_district: "3"
+  city: Fair Oaks
+  created_at: 2009-10-02 05:02:38
+  updated_at: 2009-10-02 06:18:49
+  youtube_id: Y5-hL-z7gjA
+  id: "51"
+  sex: F
+  last_name: Adams
+  description: Sandy&rsquo;s daughter&rsquo;s epilepsy means she can only get expensive, "high-risk" insurance.
+  age: "58"
+  state: CA
+  first_name: Sandy
 stories_040: 
   congressional_district: "8"
   city: San Francisco
@@ -51,6 +64,19 @@ stories_007:
   age: 
   state: CA
   first_name: Melissa
+stories_052: 
+  congressional_district: "11"
+  city: Stockton
+  created_at: 2009-10-02 05:03:34
+  updated_at: 2009-10-02 06:10:39
+  youtube_id: jWuhik9jGbw
+  id: "52"
+  sex: F
+  last_name: Summers
+  description: Lorraine can&rsquo;t get adequate care for her son with special needs.
+  age: "40"
+  state: CA
+  first_name: Lorraine
 stories_041: 
   congressional_district: "12"
   city: Daly City
@@ -519,6 +545,19 @@ stories_004:
   age: 
   state: CA
   first_name: Michael
+stories_050: 
+  congressional_district: "11"
+  city: French Camp
+  created_at: 2009-10-02 05:00:32
+  updated_at: 2009-10-02 06:01:28
+  youtube_id: p7Yc-GjTUJQ
+  id: "50"
+  sex: F
+  last_name: Barbosa
+  description: Lisa&rsquo;s grandson can&rsquo;t get the help he needs because he lacks health insurance.
+  age: "47"
+  state: CA
+  first_name: Lisa
 stories_049: 
   congressional_district: "11"
   city: Stockton
