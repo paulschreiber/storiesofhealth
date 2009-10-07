@@ -14,6 +14,6 @@ class Story < ActiveRecord::Base
   end
   
   def tweet
-    "#{self.description} #hcr #hc09 http://storiesofhealth.org/video/#{self.id}"
+    "#{self.description} #hcr #hc09 http://storiesofhealth.org/v/#{self.id}"
   end
 end
