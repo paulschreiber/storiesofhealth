@@ -12,6 +12,14 @@ class Story < ActiveRecord::Base
   def youtube_link
     "http://youtube.com/watch?v=#{self.youtube_id}"
   end
+
+  def youtube_embed_code
+    link = "http://www.youtube.com/v/#{self.youtube_id}"
+    if RAILS_ENV != "development"
+      link += "&amp;autoplay=1"
+    end
+    link
+  end
   
   def tweet
     "#{self.description} #hcr #hc09 http://storiesofhealth.org/v/#{self.id}"

@@ -1,16 +1,18 @@
 <%- compute_tag_sentence(@story) -%>
 <div id="video" class="video">
-	<object class="video" type="application/x-shockwave-flash" data="http://www.youtube.com/v/<%= @story.youtube_id %>&amp;autoplay=1">
-		<param name="movie" value="http://www.youtube.com/v/<%= @story.youtube_id %>&amp;autoplay=1"></param>
+	<object class="video" type="application/x-shockwave-flash" data="<%= @story.youtube_embed_code %>">
+		<param name="movie" value="<%= @story.youtube_embed_code %>"></param>
 	</object>
+	
+	<div class="description">
+		<p><%= @story.description %> <a href="http://www.addthis.com/bookmark.php" class="addthis_button permalink">Share</a>&nbsp;|&nbsp;<a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
+	</div>
 
 		<div class="share">
-			<p>
-			<a href="http://www.addthis.com/bookmark.php" class="addthis_button">Share <%= @story.first_name %>&rsquo;s story</a> with your friends. <a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
-			
-			<p>See more stories about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
+			<p>See more stories like <%= @story.first_name %>&rsquo;s about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
 			</p>
-		</div>
+	</div>
+
 </div>
 
 <%- if params[:action] == "fetch_story" #AJAX load -%>

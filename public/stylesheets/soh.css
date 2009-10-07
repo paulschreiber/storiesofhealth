@@ -38,6 +38,7 @@ div.static p {
   line-height: 1.5em;
 }
 
+div.description p,
 div.share p,
 div#about p {
   font-size: 0.9em;
@@ -80,6 +81,14 @@ a.permalink {
   text-transform: uppercase;
 }
 
+div a.button {
+  font-size: 1em;
+  padding: 0.3em 0.9em;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+
+a.button,
 input.button {
   width: 200px;
   font-size: 1.5em;
@@ -162,6 +171,7 @@ div.video[role='button'] {
   width: 425px ! important;
 }
 
+div.description,
 div.share,
 object.video {
   margin: auto;
