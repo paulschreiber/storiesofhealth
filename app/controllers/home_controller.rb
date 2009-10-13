@@ -43,15 +43,18 @@ class HomeController < ApplicationController
   end
  
   def from
-    @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]])
+    @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]], :order => "first_name")
     @description = "Hear health care stories from people in #{@stories.first.city}, #{@stories.first.state}."
     return specified
   end
   
   def tag
-    @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags")
     @tag = Tag.find(:all, :conditions => ["tags.name = ?", params[:id]])
-    @tag = @stories.first.tags.first if @tag.nil?
+    if @tag.empty?
+      redirect_to :action => :index and return
+    end
+    
+    @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags", :order => "first_name")
     @description = "Hear health care stories from people who #{@tag.first.description_phrase}."
     return specified
   end
@@ -68,9 +71,9 @@ class HomeController < ApplicationController
   # AJAX thumbnail loader
   def browser
     if params[:q] == "tag"
-      @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags")
+      @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND tags.name = ?", params[:id]], :include => "tags", :order => "first_name")
     elsif params[:q] == "from"
-      @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND city = ?", params[:id]])
+      @stories = Story.find(:all, :conditions => ["youtube_id IS NOT NULL AND city = ?", params[:id]], :order => "first_name")
     end
 
     @stories = Story.all if @stories.empty? 
