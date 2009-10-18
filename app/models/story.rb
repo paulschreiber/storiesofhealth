@@ -24,4 +24,8 @@ class Story < ActiveRecord::Base
   def tweet
     "#{self.description} #hcr #hc09 http://storiesofhealth.org/v/#{self.id}"
   end
+  
+  def tag_list
+    self.tags.collect(&:name).join(" ")
+  end
 end

@@ -1,508 +1,4 @@
 --- 
-tags_090: 
-  name: cant-afford
-  created_at: 2009-10-01 22:40:40
-  category: 
-  updated_at: 2009-10-01 22:40:40
-  id: "92"
-  description: cannot afford health insurance
-tags_089: 
-  name: ucsf
-  created_at: 2009-09-29 05:47:53
-  category: 
-  updated_at: 2009-09-29 05:47:53
-  id: "91"
-  description: UCSF employees
-tags_068: 
-  name: high-cholestorol
-  created_at: 2009-09-02 00:56:52
-  category: condition
-  updated_at: 2009-09-02 00:56:52
-  id: "69"
-  description: have high cholestorol
-tags_005: 
-  name: back-injury
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "5"
-  description: have a back injury
-tags_026: 
-  name: for-parent
-  created_at: 2009-08-16 05:46:45
-  category: care
-  updated_at: 2009-08-16 05:46:45
-  id: "27"
-  description: parent
-tags_047: 
-  name: parent
-  created_at: 2009-08-16 05:46:46
-  category: occupation
-  updated_at: 2009-08-16 05:46:46
-  id: "48"
-  description: parents
-tags_091: 
-  name: ece
-  created_at: 2009-10-01 22:43:13
-  category: 
-  updated_at: 2009-10-01 22:43:13
-  id: "93"
-  description: work with children
-tags_070: 
-  name: surgery
-  created_at: 2009-09-02 00:59:05
-  category: 
-  updated_at: 2009-09-02 00:59:05
-  id: "71"
-  description: had surgery
-tags_069: 
-  name: injured-at-work
-  created_at: 2009-09-02 00:58:26
-  category: condition
-  updated_at: 2009-09-02 00:58:26
-  id: "70"
-  description: were injured on the job
-tags_006: 
-  name: billing-error
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "6"
-  description: dealt with billing errors
-tags_027: 
-  name: for-sibling
-  created_at: 2009-08-16 05:46:45
-  category: care
-  updated_at: 2009-08-16 05:46:45
-  id: "28"
-  description: sibling
-tags_048: 
-  name: preexisting-condition
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "49"
-  description: cannot get insurance because of a preexisting condition
-tags_092: 
-  name: single-parent
-  created_at: 2009-10-01 22:43:33
-  category: 
-  updated_at: 2009-10-01 22:43:33
-  id: "94"
-  description: are single parents
-tags_071: 
-  name: retired-early
-  created_at: 2009-09-02 00:59:39
-  category: 
-  updated_at: 2009-09-02 00:59:39
-  id: "72"
-  description: had to retire early because of a medical condition
-tags_007: 
-  name: blind
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "7"
-  description: are blind
-tags_028: 
-  name: for-spouse
-  created_at: 2009-08-16 05:46:45
-  category: care
-  updated_at: 2009-08-16 05:46:45
-  id: "29"
-  description: spouse
-tags_050: 
-  name: single-parent-family
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "51"
-  description: grew up in single-parent families
-tags_049: 
-  name: schizophrenia
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "50"
-  description: have schizophrenia
-tags_093: 
-  name: muscular-fibrosis
-  created_at: 2009-10-01 22:44:54
-  category: condition
-  updated_at: 2009-10-01 22:44:54
-  id: "95"
-  description: have muscular fibrosis
-tags_072: 
-  name: accident
-  created_at: 2009-09-02 01:01:33
-  category: 
-  updated_at: 2009-09-02 01:01:33
-  id: "73"
-  description: were injured in accidents
-tags_029: 
-  name: glaucoma
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "30"
-  description: have glaucoma
-tags_051: 
-  name: social-security
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "52"
-  description: are on social security
-tags_008: 
-  name: ca-budget-cuts
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "8"
-  description: were affected by the California budget cuts
-tags_030: 
-  name: health-care-industry
-  created_at: 2009-08-16 05:46:45
-  category: occupation
-  updated_at: 2009-08-16 05:46:45
-  id: "31"
-  description: health care industry workers
-tags_094: 
-  name: for-grandchild
-  created_at: 2009-10-02 05:47:46
-  category: care
-  updated_at: 2009-10-02 05:47:46
-  id: "96"
-  description: grandchild
-tags_073: 
-  name: chronic-pain
-  created_at: 2009-09-02 01:03:16
-  category: condition
-  updated_at: 2009-09-02 01:03:16
-  id: "74"
-  description: suffer from chronic pain
-tags_010: 
-  name: catastrophic-care
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "11"
-  description: required catastrophic care
-tags_009: 
-  name: cancer
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "9"
-  description: had cancer
-tags_031: 
-  name: health-care-professional
-  created_at: 2009-08-16 05:46:45
-  category: occupation
-  updated_at: 2009-08-16 05:46:45
-  id: "32"
-  description: health care professionals
-tags_052: 
-  name: social-security-disability
-  created_at: 2009-08-16 05:46:46
-  category: insurance
-  updated_at: 2009-08-16 05:46:46
-  id: "53"
-  description: social security disability
-tags_095: 
-  name: adhd
-  created_at: 2009-10-02 05:49:10
-  category: condition
-  updated_at: 2009-10-02 05:49:10
-  id: "97"
-  description: have attention deficit hyperactivity disorder
-tags_074: 
-  name: nerve-damage
-  created_at: 2009-09-02 01:03:49
-  category: condition
-  updated_at: 2009-09-02 01:03:49
-  id: "75"
-  description: suffered nerve damage
-tags_011: 
-  name: cobra
-  created_at: 2009-08-16 05:46:45
-  category: insurance
-  updated_at: 2009-08-16 05:46:45
-  id: "12"
-  description: COBRA
-tags_032: 
-  name: heart-attack
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "33"
-  description: had a heart attack
-tags_053: 
-  name: state-disability
-  created_at: 2009-08-16 05:46:46
-  category: insurance
-  updated_at: 2009-08-16 05:46:46
-  id: "54"
-  description: state disability
-tags_096: 
-  name: for-child
-  created_at: 2009-10-02 06:02:31
-  category: care
-  updated_at: 2009-10-02 06:02:31
-  id: "98"
-  description: child
-tags_075: 
-  name: brain-tumor
-  created_at: 2009-09-06 22:20:34
-  category: condition
-  updated_at: 2009-09-06 22:20:34
-  id: "76"
-  description: had a brain tumor
-tags_012: 
-  name: credit-problem
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "13"
-  description: ended up with bad credit
-tags_033: 
-  name: hepatitis
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "34"
-  description: have hepatitis
-tags_054: 
-  name: stroke
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "55"
-  description: had a stroke
-tags_097: 
-  name: cerebral-palsy
-  created_at: 2009-10-02 06:03:38
-  category: condition
-  updated_at: 2009-10-02 06:03:38
-  id: "99"
-  description: have cerebral palsy
-tags_076: 
-  name: prostate
-  created_at: 2009-09-06 22:25:42
-  category: condition
-  updated_at: 2009-09-06 22:50:24
-  id: "77"
-  description: had a prostate problem
-tags_013: 
-  name: death
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "14"
-  description: died
-tags_034: 
-  name: hip-replacement
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "35"
-  description: had a hip replacement
-tags_055: 
-  name: teacher
-  created_at: 2009-08-16 05:46:46
-  category: occupation
-  updated_at: 2009-08-16 05:46:46
-  id: "56"
-  description: teachers
-tags_098: 
-  name: low-blood-pressure
-  created_at: 2009-10-02 06:07:46
-  category: condition
-  updated_at: 2009-10-02 06:07:46
-  id: "100"
-  description: had high blood pressure
-tags_077: 
-  name: low-blood-pressure
-  created_at: 2009-09-06 22:25:59
-  category: condition
-  updated_at: 2009-09-06 22:25:59
-  id: "78"
-  description: had low blood pressure
-tags_014: 
-  name: debt
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "15"
-  description: incurred debt
-tags_035: 
-  name: increased-costs
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "36"
-  description: faced increasing health care costs
-tags_056: 
-  name: travel-overseas
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "57"
-  description: traveled overseas
-tags_099: 
-  name: epilepsy
-  created_at: 2009-10-02 06:13:45
-  category: condition
-  updated_at: 2009-10-02 06:13:45
-  id: "101"
-  description: have epilepsy
-tags_078: 
-  name: icu-psychosis
-  created_at: 2009-09-06 22:51:40
-  category: condition
-  updated_at: 2009-09-06 22:51:40
-  id: "79"
-  description: had ICU psychosis
-tags_015: 
-  name: denied-coverage
-  created_at: 2009-08-16 05:46:45
-  category: 
-  updated_at: 2009-08-16 05:46:45
-  id: "16"
-  description: were denied coverage
-tags_036: 
-  name: kaiser
-  created_at: 2009-08-16 05:46:46
-  category: insurance
-  updated_at: 2009-08-16 05:46:46
-  id: "37"
-  description: Kaiser
-tags_057: 
-  name: unemployed
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "58"
-  description: are unemployed
-tags_080: 
-  name: cyclist
-  created_at: 2009-09-13 03:14:38
-  category: 
-  updated_at: 2009-09-13 03:14:38
-  id: "82"
-  description: are cyclists
-tags_079: 
-  name: ambulance
-  created_at: 2009-09-13 03:07:50
-  category: 
-  updated_at: 2009-09-13 03:07:50
-  id: "80"
-  description: had an expensive ambulance ride
-tags_016: 
-  name: dental
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "17"
-  description: have dental problems
-tags_037: 
-  name: kidney-stone
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "38"
-  description: had a kidney stone
-tags_058: 
-  name: uninsured
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "59"
-  description: are uninsured
-tags_081: 
-  name: motorcyclist
-  created_at: 2009-09-13 03:15:14
-  category: 
-  updated_at: 2009-09-13 03:15:14
-  id: "83"
-  description: are motorcyclists
-tags_017: 
-  name: diabetes
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "18"
-  description: have diabetes
-tags_038: 
-  name: leukemia
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "39"
-  description: have leukemia
-tags_060: 
-  name: waste
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "61"
-  description: experienced wasteful health care spending
-tags_059: 
-  name: veteran
-  created_at: 2009-08-16 05:46:46
-  category: occupation
-  updated_at: 2009-08-16 05:46:46
-  id: "60"
-  description: veterans
-tags_082: 
-  name: out-of-network
-  created_at: 2009-09-13 03:18:51
-  category: 
-  updated_at: 2009-09-13 03:18:51
-  id: "84"
-  description: were denied the care of an out-of-network doctor
-tags_018: 
-  name: disability
-  created_at: 2009-08-16 05:46:45
-  category: insurance
-  updated_at: 2009-08-16 05:46:45
-  id: "19"
-  description: are on disability
-tags_040: 
-  name: lost-job
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "41"
-  description: lost their jobs
-tags_039: 
-  name: lost-coverage
-  created_at: 2009-08-16 05:46:46
-  category: 
-  updated_at: 2009-08-16 05:46:46
-  id: "40"
-  description: lost their health insurance
-tags_061: 
-  name: depression
-  created_at: 2009-08-25 04:54:28
-  category: condition
-  updated_at: 2009-08-25 04:54:28
-  id: "62"
-  description: suffered from depression
-tags_083: 
-  name: physical-therapy
-  created_at: 2009-09-13 03:21:20
-  category: 
-  updated_at: 2009-09-13 03:21:20
-  id: "85"
-  description: underwent physical therapy
-tags_062: 
-  name: musician
-  created_at: 2009-08-25 04:55:12
-  category: occupation
-  updated_at: 2009-08-25 04:55:12
-  id: "63"
-  description: musicians
 tags_020: 
   name: discoid-lupus
   created_at: 2009-08-16 05:46:45
@@ -510,27 +6,20 @@ tags_020:
   updated_at: 2009-08-16 05:46:45
   id: "21"
   description: have discoid lupus
-tags_019: 
-  name: disabled
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "20"
-  description: are disabled
-tags_041: 
-  name: medi-cal
-  created_at: 2009-08-16 05:46:46
-  category: insurance
-  updated_at: 2009-08-16 05:46:46
-  id: "42"
-  description: Medi-Cal
-tags_084: 
-  name: limit-on-care
-  created_at: 2009-09-13 03:22:00
+tags_079: 
+  name: ambulance
+  created_at: 2009-09-13 03:07:50
   category: 
-  updated_at: 2009-09-13 03:22:00
-  id: "86"
-  description: faced a limit on the care they could receive
+  updated_at: 2009-09-13 03:07:50
+  id: "80"
+  description: had an expensive ambulance ride
+tags_106: 
+  name: homeless
+  created_at: 2009-10-18 02:33:40
+  category: 
+  updated_at: 2009-10-18 02:33:40
+  id: "109"
+  description: are homeless
 tags_021: 
   name: divorce
   created_at: 2009-08-16 05:46:45
@@ -538,34 +27,13 @@ tags_021:
   updated_at: 2009-08-16 05:46:45
   id: "22"
   description: got divorced as a result of a medical condition
-tags_042: 
-  name: medicare
-  created_at: 2009-08-16 05:46:46
-  category: insurance
-  updated_at: 2009-08-16 05:46:46
-  id: "43"
-  description: Medicare
-tags_063: 
-  name: self-employed
-  created_at: 2009-08-30 17:38:45
-  category: occupation
-  updated_at: 2009-09-01 17:10:27
-  id: "64"
-  description: self-employed
-tags_085: 
-  name: union
-  created_at: 2009-09-24 07:19:59
-  category: occupation
-  updated_at: 2009-09-24 07:19:59
-  id: "87"
-  description: union members
-tags_001: 
-  name: amebic-dysentery
-  created_at: 2009-08-16 05:46:45
+tags_107: 
+  name: severe-pain
+  created_at: 2009-10-18 02:34:35
   category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "1"
-  description: had amebic dysentery
+  updated_at: 2009-10-18 02:34:35
+  id: "110"
+  description: suffered from severe pain
 tags_022: 
   name: emergency-room
   created_at: 2009-08-16 05:46:45
@@ -573,34 +41,20 @@ tags_022:
   updated_at: 2009-08-16 05:46:45
   id: "23"
   description: were treated in the emergency room
-tags_043: 
-  name: medicare-gap
+tags_108: 
+  name: untreated-illness
+  created_at: 2009-10-18 02:50:56
+  category: condition
+  updated_at: 2009-10-18 02:50:56
+  id: "111"
+  description: had an untreated illness
+tags_050: 
+  name: single-parent-family
   created_at: 2009-08-16 05:46:46
   category: 
   updated_at: 2009-08-16 05:46:46
-  id: "44"
-  description: fell into the medicare gap
-tags_064: 
-  name: attorney
-  created_at: 2009-09-01 17:09:16
-  category: occupation
-  updated_at: 2009-09-01 17:09:16
-  id: "65"
-  description: attorneys
-tags_086: 
-  name: misdiagnosed
-  created_at: 2009-09-24 07:20:28
-  category: 
-  updated_at: 2009-09-24 07:20:28
-  id: "88"
-  description: were misdiagnosed
-tags_002: 
-  name: arthritis
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "2"
-  description: have arthritis
+  id: "51"
+  description: grew up in single-parent families
 tags_023: 
   name: financial-hardship
   created_at: 2009-08-16 05:46:45
@@ -608,34 +62,20 @@ tags_023:
   updated_at: 2009-08-16 05:46:45
   id: "24"
   description: incurred a financial hardship
-tags_044: 
-  name: mental-illness
+tags_109: 
+  name: amputation
+  created_at: 2009-10-18 02:51:27
+  category: condition
+  updated_at: 2009-10-18 02:51:27
+  id: "112"
+  description: had a limb amputated
+tags_051: 
+  name: social-security
   created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "45"
-  description: have a mental illness
-tags_065: 
-  name: waitress
-  created_at: 2009-09-02 00:45:35
-  category: occupation
-  updated_at: 2009-09-02 00:45:35
-  id: "66"
-  description: waitresses
-tags_087: 
-  name: agammaglobulinemia
-  created_at: 2009-09-29 05:45:03
   category: 
-  updated_at: 2009-09-29 05:45:03
-  id: "89"
-  description: have agammaglobulinemia
-tags_003: 
-  name: atrial-septal-defect
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "3"
-  description: had an atrial septal defect
+  updated_at: 2009-08-16 05:46:46
+  id: "52"
+  description: are on social security
 tags_024: 
   name: financial-services-professional
   created_at: 2009-08-16 05:46:45
@@ -643,41 +83,20 @@ tags_024:
   updated_at: 2009-08-16 05:46:45
   id: "25"
   description: financial services professionals
-tags_045: 
-  name: migraine
-  created_at: 2009-08-16 05:46:46
-  category: condition
-  updated_at: 2009-08-16 05:46:46
-  id: "46"
-  description: have migraines
-tags_066: 
-  name: legal-services-profession
-  created_at: 2009-09-02 00:50:34
-  category: occupation
-  updated_at: 2009-09-02 00:52:20
-  id: "67"
-  description: in the legal services profession
-tags_088: 
-  name: bluecross
-  created_at: 2009-09-29 05:46:19
+tags_080: 
+  name: cyclist
+  created_at: 2009-09-13 03:14:38
   category: 
-  updated_at: 2009-09-29 05:46:19
-  id: "90"
-  description: Blue Cross
-tags_067: 
-  name: hypertension
-  created_at: 2009-09-02 00:56:30
-  category: condition
-  updated_at: 2009-09-02 00:56:30
-  id: "68"
-  description: have hypertension
-tags_004: 
-  name: autism
-  created_at: 2009-08-16 05:46:45
-  category: condition
-  updated_at: 2009-08-16 05:46:45
-  id: "4"
-  description: have autism
+  updated_at: 2009-09-13 03:14:38
+  id: "82"
+  description: are cyclists
+tags_052: 
+  name: social-security-disability
+  created_at: 2009-08-16 05:46:46
+  category: insurance
+  updated_at: 2009-08-16 05:46:46
+  id: "53"
+  description: social security disability
 tags_025: 
   name: for-niece
   created_at: 2009-08-16 05:46:45
@@ -685,6 +104,594 @@ tags_025:
   updated_at: 2009-08-16 05:46:45
   id: "26"
   description: niece
+tags_081: 
+  name: motorcyclist
+  created_at: 2009-09-13 03:15:14
+  category: 
+  updated_at: 2009-09-13 03:15:14
+  id: "83"
+  description: are motorcyclists
+tags_053: 
+  name: state-disability
+  created_at: 2009-08-16 05:46:46
+  category: insurance
+  updated_at: 2009-08-16 05:46:46
+  id: "54"
+  description: state disability
+tags_082: 
+  name: out-of-network
+  created_at: 2009-09-13 03:18:51
+  category: 
+  updated_at: 2009-09-13 03:18:51
+  id: "84"
+  description: were denied the care of an out-of-network doctor
+tags_054: 
+  name: stroke
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "55"
+  description: had a stroke
+tags_026: 
+  name: for-parent
+  created_at: 2009-08-16 05:46:45
+  category: care
+  updated_at: 2009-08-16 05:46:45
+  id: "27"
+  description: parent
+tags_083: 
+  name: physical-therapy
+  created_at: 2009-09-13 03:21:20
+  category: 
+  updated_at: 2009-09-13 03:21:20
+  id: "85"
+  description: underwent physical therapy
+tags_055: 
+  name: teacher
+  created_at: 2009-08-16 05:46:46
+  category: occupation
+  updated_at: 2009-08-16 05:46:46
+  id: "56"
+  description: teachers
+tags_110: 
+  name: polio
+  created_at: 2009-10-18 03:22:03
+  category: condition
+  updated_at: 2009-10-18 03:22:03
+  id: "113"
+  description: had polio
+tags_027: 
+  name: for-sibling
+  created_at: 2009-08-16 05:46:45
+  category: care
+  updated_at: 2009-08-16 05:46:45
+  id: "28"
+  description: sibling
+tags_084: 
+  name: limit-on-care
+  created_at: 2009-09-13 03:22:00
+  category: 
+  updated_at: 2009-09-13 03:22:00
+  id: "86"
+  description: faced a limit on the care they could receive
+tags_056: 
+  name: travel-overseas
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "57"
+  description: traveled overseas
+tags_111: 
+  name: refused-to-pay
+  created_at: 2009-10-18 03:42:09
+  category: 
+  updated_at: 2009-10-18 03:42:09
+  id: "114"
+  description: had insurance that refused to pay for their treatment
+tags_028: 
+  name: for-spouse
+  created_at: 2009-08-16 05:46:45
+  category: care
+  updated_at: 2009-08-16 05:46:45
+  id: "29"
+  description: spouse
+tags_085: 
+  name: union
+  created_at: 2009-09-24 07:19:59
+  category: occupation
+  updated_at: 2009-09-24 07:19:59
+  id: "87"
+  description: union members
+tags_057: 
+  name: unemployed
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "58"
+  description: are unemployed
+tags_112: 
+  name: valley-fever
+  created_at: 2009-10-18 06:37:41
+  category: condition
+  updated_at: 2009-10-18 06:37:41
+  id: "115"
+  description: had valley fever
+tags_029: 
+  name: glaucoma
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "30"
+  description: have glaucoma
+tags_086: 
+  name: misdiagnosed
+  created_at: 2009-09-24 07:20:28
+  category: 
+  updated_at: 2009-09-24 07:20:28
+  id: "88"
+  description: were misdiagnosed
+tags_058: 
+  name: uninsured
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "59"
+  description: are uninsured
+tags_113: 
+  name: treatment-elsewhere
+  created_at: 2009-10-18 06:40:01
+  category: 
+  updated_at: 2009-10-18 06:40:01
+  id: "116"
+  description: got treated affordably outside of the United States
+tags_087: 
+  name: agammaglobulinemia
+  created_at: 2009-09-29 05:45:03
+  category: 
+  updated_at: 2009-09-29 05:45:03
+  id: "89"
+  description: have agammaglobulinemia
+tags_059: 
+  name: veteran
+  created_at: 2009-08-16 05:46:46
+  category: occupation
+  updated_at: 2009-08-16 05:46:46
+  id: "60"
+  description: veterans
+tags_114: 
+  name: chef
+  created_at: 2009-10-18 06:43:13
+  category: occupation
+  updated_at: 2009-10-18 06:43:13
+  id: "117"
+  description: chefs
+tags_115: 
+  name: lost-house
+  created_at: 2009-10-18 06:43:45
+  category: 
+  updated_at: 2009-10-18 06:43:45
+  id: "118"
+  description: lost their house due to health care bills
+tags_088: 
+  name: bluecross
+  created_at: 2009-09-29 05:46:19
+  category: 
+  updated_at: 2009-09-29 05:46:19
+  id: "90"
+  description: Blue Cross
+tags_001: 
+  name: amebic-dysentery
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "1"
+  description: had amebic dysentery
+tags_002: 
+  name: arthritis
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "2"
+  description: have arthritis
+tags_030: 
+  name: health-care-industry
+  created_at: 2009-08-16 05:46:45
+  category: occupation
+  updated_at: 2009-08-16 05:46:45
+  id: "31"
+  description: health care industry workers
+tags_089: 
+  name: ucsf
+  created_at: 2009-09-29 05:47:53
+  category: 
+  updated_at: 2009-09-29 05:47:53
+  id: "91"
+  description: UCSF employees
+tags_003: 
+  name: atrial-septal-defect
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "3"
+  description: had an atrial septal defect
+tags_031: 
+  name: health-care-professional
+  created_at: 2009-08-16 05:46:45
+  category: occupation
+  updated_at: 2009-08-16 05:46:45
+  id: "32"
+  description: health care professionals
+tags_004: 
+  name: autism
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "4"
+  description: have autism
+tags_060: 
+  name: waste
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "61"
+  description: experienced wasteful health care spending
+tags_032: 
+  name: heart-attack
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "33"
+  description: had a heart attack
+tags_061: 
+  name: depression
+  created_at: 2009-08-25 04:54:28
+  category: condition
+  updated_at: 2009-08-25 04:54:28
+  id: "62"
+  description: suffered from depression
+tags_033: 
+  name: hepatitis
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "34"
+  description: have hepatitis
+tags_005: 
+  name: back-injury
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "5"
+  description: have a back injury
+tags_062: 
+  name: musician
+  created_at: 2009-08-25 04:55:12
+  category: occupation
+  updated_at: 2009-08-25 04:55:12
+  id: "63"
+  description: musicians
+tags_034: 
+  name: hip-replacement
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "35"
+  description: had a hip replacement
+tags_006: 
+  name: billing-error
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "6"
+  description: dealt with billing errors
+tags_090: 
+  name: cant-afford
+  created_at: 2009-10-01 22:40:40
+  category: 
+  updated_at: 2009-10-01 22:40:40
+  id: "92"
+  description: cannot afford health insurance
+tags_063: 
+  name: self-employed
+  created_at: 2009-08-30 17:38:45
+  category: occupation
+  updated_at: 2009-09-01 17:10:27
+  id: "64"
+  description: self-employed
+tags_035: 
+  name: increased-costs
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "36"
+  description: faced increasing health care costs
+tags_007: 
+  name: blind
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "7"
+  description: are blind
+tags_091: 
+  name: ece
+  created_at: 2009-10-01 22:43:13
+  category: 
+  updated_at: 2009-10-01 22:43:13
+  id: "93"
+  description: work with children
+tags_064: 
+  name: attorney
+  created_at: 2009-09-01 17:09:16
+  category: occupation
+  updated_at: 2009-09-01 17:09:16
+  id: "65"
+  description: attorneys
+tags_036: 
+  name: kaiser
+  created_at: 2009-08-16 05:46:46
+  category: insurance
+  updated_at: 2009-08-16 05:46:46
+  id: "37"
+  description: Kaiser
+tags_008: 
+  name: ca-budget-cuts
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "8"
+  description: were affected by the California budget cuts
+tags_092: 
+  name: single-parent
+  created_at: 2009-10-01 22:43:33
+  category: 
+  updated_at: 2009-10-01 22:43:33
+  id: "94"
+  description: are single parents
+tags_065: 
+  name: waitress
+  created_at: 2009-09-02 00:45:35
+  category: occupation
+  updated_at: 2009-09-02 00:45:35
+  id: "66"
+  description: waitresses
+tags_037: 
+  name: kidney-stone
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "38"
+  description: had a kidney stone
+tags_009: 
+  name: cancer
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "9"
+  description: had cancer
+tags_093: 
+  name: muscular-fibrosis
+  created_at: 2009-10-01 22:44:54
+  category: condition
+  updated_at: 2009-10-01 22:44:54
+  id: "95"
+  description: have muscular fibrosis
+tags_066: 
+  name: legal-services-profession
+  created_at: 2009-09-02 00:50:34
+  category: occupation
+  updated_at: 2009-09-02 00:52:20
+  id: "67"
+  description: in the legal services profession
+tags_038: 
+  name: leukemia
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "39"
+  description: have leukemia
+tags_094: 
+  name: for-grandchild
+  created_at: 2009-10-02 05:47:46
+  category: care
+  updated_at: 2009-10-02 05:47:46
+  id: "96"
+  description: grandchild
+tags_067: 
+  name: hypertension
+  created_at: 2009-09-02 00:56:30
+  category: condition
+  updated_at: 2009-09-02 00:56:30
+  id: "68"
+  description: have hypertension
+tags_039: 
+  name: lost-coverage
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "40"
+  description: lost their health insurance
+tags_095: 
+  name: adhd
+  created_at: 2009-10-02 05:49:10
+  category: condition
+  updated_at: 2009-10-02 05:49:10
+  id: "97"
+  description: have attention deficit hyperactivity disorder
+tags_096: 
+  name: for-child
+  created_at: 2009-10-02 06:02:31
+  category: care
+  updated_at: 2009-10-02 06:02:31
+  id: "98"
+  description: child
+tags_068: 
+  name: high-cholestorol
+  created_at: 2009-09-02 00:56:52
+  category: condition
+  updated_at: 2009-09-02 00:56:52
+  id: "69"
+  description: have high cholestorol
+tags_097: 
+  name: cerebral-palsy
+  created_at: 2009-10-02 06:03:38
+  category: condition
+  updated_at: 2009-10-02 06:03:38
+  id: "99"
+  description: have cerebral palsy
+tags_010: 
+  name: catastrophic-care
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "11"
+  description: required catastrophic care
+tags_069: 
+  name: injured-at-work
+  created_at: 2009-09-02 00:58:26
+  category: condition
+  updated_at: 2009-09-02 00:58:26
+  id: "70"
+  description: were injured on the job
+tags_098: 
+  name: high-blood-pressure
+  created_at: 2009-10-02 06:07:46
+  category: condition
+  updated_at: 2009-10-02 06:07:46
+  id: "100"
+  description: had high blood pressure
+tags_011: 
+  name: cobra
+  created_at: 2009-08-16 05:46:45
+  category: insurance
+  updated_at: 2009-08-16 05:46:45
+  id: "12"
+  description: COBRA
+tags_040: 
+  name: lost-job
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "41"
+  description: lost their jobs
+tags_099: 
+  name: epilepsy
+  created_at: 2009-10-02 06:13:45
+  category: condition
+  updated_at: 2009-10-02 06:13:45
+  id: "101"
+  description: have epilepsy
+tags_012: 
+  name: credit-problem
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "13"
+  description: ended up with bad credit
+tags_041: 
+  name: medi-cal
+  created_at: 2009-08-16 05:46:46
+  category: insurance
+  updated_at: 2009-08-16 05:46:46
+  id: "42"
+  description: Medi-Cal
+tags_013: 
+  name: death
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "14"
+  description: died
+tags_042: 
+  name: medicare
+  created_at: 2009-08-16 05:46:46
+  category: insurance
+  updated_at: 2009-08-16 05:46:46
+  id: "43"
+  description: Medicare
+tags_014: 
+  name: debt
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "15"
+  description: incurred debt
+tags_070: 
+  name: surgery
+  created_at: 2009-09-02 00:59:05
+  category: 
+  updated_at: 2009-09-02 00:59:05
+  id: "71"
+  description: had surgery
+tags_043: 
+  name: medicare-gap
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "44"
+  description: fell into the medicare gap
+tags_015: 
+  name: denied-coverage
+  created_at: 2009-08-16 05:46:45
+  category: 
+  updated_at: 2009-08-16 05:46:45
+  id: "16"
+  description: were denied coverage
+tags_071: 
+  name: retired-early
+  created_at: 2009-09-02 00:59:39
+  category: 
+  updated_at: 2009-09-02 00:59:39
+  id: "72"
+  description: had to retire early because of a medical condition
+tags_044: 
+  name: mental-illness
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "45"
+  description: have a mental illness
+tags_016: 
+  name: dental
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "17"
+  description: have dental problems
+tags_072: 
+  name: accident
+  created_at: 2009-09-02 01:01:33
+  category: 
+  updated_at: 2009-09-02 01:01:33
+  id: "73"
+  description: were injured in accidents
+tags_045: 
+  name: migraine
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "46"
+  description: have migraines
+tags_100: 
+  name: student
+  created_at: 2009-10-18 01:03:10
+  category: occupation
+  updated_at: 2009-10-18 01:03:38
+  id: "102"
+  description: students
+tags_017: 
+  name: diabetes
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "18"
+  description: have diabetes
+tags_073: 
+  name: chronic-pain
+  created_at: 2009-09-02 01:03:16
+  category: condition
+  updated_at: 2009-09-02 01:03:16
+  id: "74"
+  description: suffer from chronic pain
 tags_046: 
   name: nurse
   created_at: 2009-08-16 05:46:46
@@ -692,3 +699,108 @@ tags_046:
   updated_at: 2009-08-16 05:46:46
   id: "47"
   description: nurses
+tags_101: 
+  name: tumor
+  created_at: 2009-10-18 01:04:09
+  category: condition
+  updated_at: 2009-10-18 01:04:09
+  id: "103"
+  description: had a tumor
+tags_018: 
+  name: disability
+  created_at: 2009-08-16 05:46:45
+  category: insurance
+  updated_at: 2009-08-16 05:46:45
+  id: "19"
+  description: are on disability
+tags_074: 
+  name: nerve-damage
+  created_at: 2009-09-02 01:03:49
+  category: condition
+  updated_at: 2009-09-02 01:03:49
+  id: "75"
+  description: suffered nerve damage
+tags_102: 
+  name: artist
+  created_at: 2009-10-18 01:53:44
+  category: occupation
+  updated_at: 2009-10-18 01:53:44
+  id: "104"
+  description: artists
+tags_019: 
+  name: disabled
+  created_at: 2009-08-16 05:46:45
+  category: condition
+  updated_at: 2009-08-16 05:46:45
+  id: "20"
+  description: are disabled
+tags_075: 
+  name: brain-tumor
+  created_at: 2009-09-06 22:20:34
+  category: condition
+  updated_at: 2009-09-06 22:20:34
+  id: "76"
+  description: had a brain tumor
+tags_047: 
+  name: parent
+  created_at: 2009-08-16 05:46:46
+  category: occupation
+  updated_at: 2009-08-16 05:46:46
+  id: "48"
+  description: parents
+tags_103: 
+  name: hiv
+  created_at: 2009-10-18 01:54:10
+  category: condition
+  updated_at: 2009-10-18 01:54:10
+  id: "105"
+  description: have HIV
+tags_076: 
+  name: prostate
+  created_at: 2009-09-06 22:25:42
+  category: condition
+  updated_at: 2009-09-06 22:50:24
+  id: "77"
+  description: had a prostate problem
+tags_048: 
+  name: preexisting-condition
+  created_at: 2009-08-16 05:46:46
+  category: 
+  updated_at: 2009-08-16 05:46:46
+  id: "49"
+  description: cannot get insurance because of a preexisting condition
+tags_077: 
+  name: low-blood-pressure
+  created_at: 2009-09-06 22:25:59
+  category: condition
+  updated_at: 2009-09-06 22:25:59
+  id: "78"
+  description: had low blood pressure
+tags_049: 
+  name: schizophrenia
+  created_at: 2009-08-16 05:46:46
+  category: condition
+  updated_at: 2009-08-16 05:46:46
+  id: "50"
+  description: have schizophrenia
+tags_104: 
+  name: grant-writer
+  created_at: 2009-10-18 02:06:16
+  category: occupation
+  updated_at: 2009-10-18 02:06:16
+  id: "107"
+  description: grant writers
+tags_078: 
+  name: icu-psychosis
+  created_at: 2009-09-06 22:51:40
+  category: condition
+  updated_at: 2009-09-06 22:51:40
+  id: "79"
+  description: had ICU psychosis
+tags_105: 
+  name: inadequate-coverage
+  created_at: 2009-10-18 02:07:13
+  category: 
+  updated_at: 2009-10-18 02:07:13
+  id: "108"
+  description: had inadequate coverage

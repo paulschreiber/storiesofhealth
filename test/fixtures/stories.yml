@@ -129,6 +129,19 @@ stories_008:
   age: 
   state: CA
   first_name: Laurie
+stories_053: 
+  congressional_district: "33"
+  city: Culver
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 01:46:37
+  youtube_id: 8C1kA5G-poY
+  id: "53"
+  sex: F
+  last_name: Concoff Kronbeck
+  description: It took Lisa, a student, several years to get the tumor in her finger diagnosed.
+  age: "29"
+  state: CA
+  first_name: Lisa
 stories_042: 
   congressional_district: "14"
   city: Redwood City
@@ -181,6 +194,19 @@ stories_009:
   age: 
   state: CA
   first_name: Judith
+stories_054: 
+  congressional_district: "34"
+  city: Los Angeles
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 01:55:35
+  youtube_id: 
+  id: "54"
+  sex: F
+  last_name: Dornbusch
+  description: Anthem Blue Cross has increased Steven's premiums 107% in 30 months.
+  age: "52"
+  state: CA
+  first_name: Steven
 stories_043: 
   congressional_district: "14"
   city: Redwood City
@@ -233,6 +259,19 @@ stories_010:
   age: 
   state: CA
   first_name: Kristen
+stories_055: 
+  congressional_district: "29"
+  city: Altadena
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 02:03:10
+  youtube_id: CPNQ_-HKW2Q
+  id: "55"
+  sex: F
+  last_name: Braig
+  description: Susan is $50,000 in debt, due to Blue Cross&rsquo; inadequate coverage.
+  age: "60"
+  state: CA
+  first_name: Susan
 stories_044: 
   congressional_district: "14"
   city: Half Moon Bay
@@ -285,6 +324,19 @@ stories_011:
   age: 
   state: CA
   first_name: Suzanne
+stories_056: 
+  congressional_district: "37"
+  city: Long Beach
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 06:34:00
+  youtube_id: P8HQ6alP2iY
+  id: "56"
+  sex: F
+  last_name: Toms
+  description: Carla&rsquo;s patient lost his job, then his insurance&hellip;and then his house.
+  age: "40"
+  state: CA
+  first_name: Carla
 stories_045: 
   congressional_district: "12"
   city: Burlingame
@@ -350,6 +402,19 @@ stories_001:
   age: 
   state: CA
   first_name: Jeff
+stories_057: 
+  congressional_district: "30"
+  city: Santa Monica
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 02:31:43
+  youtube_id: 4nqUjEgumaw
+  id: "57"
+  sex: F
+  last_name: Partovi
+  description: One of Susan&rsquo;s patients who lost a leg because he was uninsured.
+  age: "42"
+  state: CA
+  first_name: Susan
 stories_046: 
   congressional_district: "9"
   city: Oakland
@@ -415,6 +480,19 @@ stories_002:
   age: "55"
   state: CA
   first_name: Chuck
+stories_058: 
+  congressional_district: "35"
+  city: Inglewood
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 03:41:03
+  youtube_id: hFEnbBYBKZE
+  id: "58"
+  sex: F
+  last_name: Sparling
+  description: Anthem Blue Cross is refusing to pay for Saundra&rsquo;s daughter&rsquo;s treatment.
+  age: "64"
+  state: CA
+  first_name: Saundra
 stories_047: 
   congressional_district: "8"
   city: San Francisco
@@ -480,6 +558,32 @@ stories_003:
   age: "39"
   state: CA
   first_name: Amanda
+stories_060: 
+  congressional_district: "29"
+  city: Glendale
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 06:31:13
+  youtube_id: h5zM86CNJEs
+  id: "60"
+  sex: F
+  last_name: Storey
+  description: Nina&rsquo;s had to sell their house to pay their medical bills.
+  age: "33"
+  state: CA
+  first_name: Nina
+stories_059: 
+  congressional_district: "29"
+  city: Alhambra
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-11 10:32:29
+  youtube_id: 
+  id: "59"
+  sex: F
+  last_name: Lopez
+  description: 
+  age: "60"
+  state: CA
+  first_name: Liz
 stories_048: 
   congressional_district: "12"
   city: Burlingame
@@ -545,6 +649,19 @@ stories_004:
   age: 
   state: CA
   first_name: Michael
+stories_061: 
+  congressional_district: "20"
+  city: Bakersfield
+  created_at: 2009-10-11 10:32:29
+  updated_at: 2009-10-18 06:41:09
+  youtube_id: jGY0UiIySkA
+  id: "61"
+  sex: M
+  last_name: Cruise
+  description: Matthew, after serving his country in Vietnam, has to go to India to afford his wife's hip replacement.
+  age: "74"
+  state: CA
+  first_name: Matthew
 stories_050: 
   congressional_district: "11"
   city: French Camp
