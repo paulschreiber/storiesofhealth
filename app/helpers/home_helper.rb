@@ -1,7 +1,7 @@
 module HomeHelper
   
   def permalink(story)
-     url_for(:controller => :home, :action => :video, :id => story.id, :host => request.host)
+     url_for(:controller => :home, :action => :video, :id => story.id, :host => request.host, :port => request.port)
   end
   
   def compute_tag_sentence(story)
