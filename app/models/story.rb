@@ -22,7 +22,8 @@ class Story < ActiveRecord::Base
   end
   
   def tweet
-    "#{self.description} #hcr #hc09 http://storiesofhealth.org/v/#{self.id}"
+    coder = HTMLEntities.new
+    coder.decode("#{self.description} #hcr #hc09 http://storiesofhealth.org/v/#{self.id}")
   end
   
   def tag_list

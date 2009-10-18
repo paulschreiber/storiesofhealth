@@ -286,6 +286,13 @@ tags_001:
   updated_at: 2009-08-16 05:46:45
   id: "1"
   description: had amebic dysentery
+tags_116: 
+  name: gastric-bypass
+  created_at: 2009-10-18 08:13:39
+  category: condition
+  updated_at: 2009-10-18 08:13:39
+  id: "119"
+  description: had gastric bypass surgery
 tags_002: 
   name: arthritis
   created_at: 2009-08-16 05:46:45
