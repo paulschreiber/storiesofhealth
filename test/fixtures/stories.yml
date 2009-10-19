@@ -424,7 +424,7 @@ stories_046:
   id: "46"
   sex: M
   last_name: Holliday
-  description: Chris&rsquo; grandmother&rsquo;s insurance company refused to treat her lung cancer, a "preexisting condition."
+  description: Chris&rsquo; grandmother&rsquo;s insurance company refused to treat her lung cancer, a &ldquo;pre-existing condition.&rdquo;
   age: "27"
   state: CA
   first_name: Chris
