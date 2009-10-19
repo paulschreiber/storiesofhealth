@@ -411,7 +411,7 @@ stories_057:
   id: "57"
   sex: F
   last_name: Partovi
-  description: One of Susan&rsquo;s patients who lost a leg because he was uninsured.
+  description: One of Susan&rsquo;s patients lost a leg because he was uninsured.
   age: "42"
   state: CA
   first_name: Susan
