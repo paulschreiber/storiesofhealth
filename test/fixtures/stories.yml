@@ -8,7 +8,7 @@ stories_051:
   id: "51"
   sex: F
   last_name: Adams
-  description: Sandy&rsquo;s daughter&rsquo;s epilepsy means she can only get expensive, "high-risk" insurance.
+  description: Sandy&rsquo;s daughter&rsquo;s epilepsy means she can only get expensive, &ldquo;high-risk&rdquo; insurance.
   age: "58"
   state: CA
   first_name: Sandy
@@ -203,7 +203,7 @@ stories_054:
   id: "54"
   sex: F
   last_name: Dornbusch
-  description: Anthem Blue Cross has increased Steven's premiums 107% in 30 months.
+  description: Anthem Blue Cross has increased Steven&rsquo;s premiums 107% in 30 months.
   age: "52"
   state: CA
   first_name: Steven
@@ -658,7 +658,7 @@ stories_061:
   id: "61"
   sex: M
   last_name: Cruise
-  description: Matthew, after serving his country in Vietnam, has to go to India to afford his wife's hip replacement.
+  description: Matthew, after serving his country in Vietnam, has to go to India to afford his wife&rsquo;s hip replacement.
   age: "74"
   state: CA
   first_name: Matthew
