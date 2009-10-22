@@ -1,10 +1,25 @@
 --- 
+stories_062: 
+  congressional_district: "20"
+  city: Bakersfield
+  created_at: 2009-10-22 19:03:02
+  updated_at: 2009-10-22 19:10:41
+  youtube_id: _hqt-DyvkvY
+  language: en
+  id: "62"
+  sex: F
+  last_name: Dudney
+  description: A lab accident cost Betty her job, her immune system and her health insurance.
+  age: "75"
+  state: CA
+  first_name: Betty
 stories_051: 
   congressional_district: "3"
   city: Fair Oaks
   created_at: 2009-10-02 05:02:38
   updated_at: 2009-10-02 06:18:49
   youtube_id: Y5-hL-z7gjA
+  language: en
   id: "51"
   sex: F
   last_name: Adams
@@ -18,6 +33,7 @@ stories_040:
   created_at: 2009-09-06 21:58:09
   updated_at: 2009-09-06 22:05:50
   youtube_id: tUrf2aL1aDs
+  language: en
   id: "40"
   sex: F
   last_name: Diaz
@@ -31,6 +47,7 @@ stories_029:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 08:37:40
   youtube_id: kjgUcCGR1zg
+  language: en
   id: "29"
   sex: F
   last_name: Wright
@@ -44,6 +61,7 @@ stories_018:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:29:53
   youtube_id: g63y5QQ4ckc
+  language: en
   id: "18"
   sex: M
   last_name: Hunt
@@ -57,6 +75,7 @@ stories_007:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 14:59:26
   youtube_id: lk-1QCSvDlY
+  language: en
   id: "7"
   sex: F
   last_name: Meighan
@@ -64,12 +83,27 @@ stories_007:
   age: 
   state: CA
   first_name: Melissa
+stories_063: 
+  congressional_district: "20"
+  city: Bakersfield
+  created_at: 2009-10-22 19:15:39
+  updated_at: 2009-10-22 20:28:45
+  youtube_id: ADo56CM105E
+  language: en
+  id: "63"
+  sex: F
+  last_name: Pearl Page
+  description: Eddie tried and tried, but couldn&rsquo;t find affordable health insurance.
+  age: "59"
+  state: CA
+  first_name: Eddie
 stories_052: 
   congressional_district: "11"
   city: Stockton
   created_at: 2009-10-02 05:03:34
   updated_at: 2009-10-02 06:10:39
   youtube_id: jWuhik9jGbw
+  language: en
   id: "52"
   sex: F
   last_name: Summers
@@ -83,6 +117,7 @@ stories_041:
   created_at: 2009-09-06 22:00:38
   updated_at: 2009-09-06 22:14:47
   youtube_id: Hm8rQRqbv1o
+  language: en
   id: "41"
   sex: F
   last_name: Galliani
@@ -96,6 +131,7 @@ stories_030:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:19:45
   youtube_id: bH8APfJtxvQ
+  language: en
   id: "30"
   sex: M
   last_name: Cohen
@@ -109,6 +145,7 @@ stories_019:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:10:17
   youtube_id: DaGB5qvHNeU
+  language: en
   id: "19"
   sex: M
   last_name: Roberts
@@ -122,6 +159,7 @@ stories_008:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 14:56:15
   youtube_id: lgIbPccFmU0
+  language: en
   id: "8"
   sex: F
   last_name: Bellet
@@ -129,12 +167,27 @@ stories_008:
   age: 
   state: CA
   first_name: Laurie
+stories_064: 
+  congressional_district: "22"
+  city: Bakersfield
+  created_at: 2009-10-22 19:36:33
+  updated_at: 2009-10-22 20:00:44
+  youtube_id: dYuQIx09hE0
+  language: es
+  id: "64"
+  sex: F
+  last_name: Maura Miranda
+  description: Maria&rsquo;s insurance company refused to treat her stroke.
+  age: "63"
+  state: CA
+  first_name: Maria
 stories_053: 
   congressional_district: "33"
   city: Culver
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 01:46:37
   youtube_id: 8C1kA5G-poY
+  language: en
   id: "53"
   sex: F
   last_name: Concoff Kronbeck
@@ -148,6 +201,7 @@ stories_042:
   created_at: 2009-09-13 02:52:01
   updated_at: 2009-09-13 03:01:37
   youtube_id: hQt3fjGa-RY
+  language: en
   id: "42"
   sex: M
   last_name: Tarzanin
@@ -161,6 +215,7 @@ stories_031:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 08:28:19
   youtube_id: Ih8awFU2ZMQ
+  language: en
   id: "31"
   sex: M
   last_name: Ruch
@@ -174,6 +229,7 @@ stories_020:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:12:32
   youtube_id: r72rUsjdRgQ
+  language: en
   id: "20"
   sex: F
   last_name: Coombs
@@ -187,6 +243,7 @@ stories_009:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 14:53:20
   youtube_id: lhQWBhRE6bM
+  language: en
   id: "9"
   sex: F
   last_name: Gilbert
@@ -194,12 +251,27 @@ stories_009:
   age: 
   state: CA
   first_name: Judith
+stories_065: 
+  congressional_district: "22"
+  city: Bakersfield
+  created_at: 2009-10-22 19:39:01
+  updated_at: 2009-10-22 19:43:47
+  youtube_id: 5j9rhxOgQ5Q
+  language: en
+  id: "65"
+  sex: F
+  last_name: Swick
+  description: Because of poor insurance, Teresa has to travel the state to take care of her daughter.
+  age: 
+  state: CA
+  first_name: Teresa
 stories_054: 
   congressional_district: "34"
   city: Los Angeles
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 01:55:35
   youtube_id: MtEK8KQKpH8
+  language: en
   id: "54"
   sex: F
   last_name: Dornbusch
@@ -213,6 +285,7 @@ stories_043:
   created_at: 2009-09-13 02:56:39
   updated_at: 2009-09-13 03:04:34
   youtube_id: OTBADnc26cw
+  language: en
   id: "43"
   sex: F
   last_name: Mogin
@@ -226,6 +299,7 @@ stories_032:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 08:33:59
   youtube_id: VeKt-uqmLHc
+  language: en
   id: "32"
   sex: F
   last_name: Glenn
@@ -239,6 +313,7 @@ stories_021:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:09:35
   youtube_id: CX-HND0ex0o
+  language: en
   id: "21"
   sex: M
   last_name: Nelson
@@ -252,6 +327,7 @@ stories_010:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 14:54:49
   youtube_id: plzWHgv0ktI
+  language: en
   id: "10"
   sex: F
   last_name: Rasmussen
@@ -265,6 +341,7 @@ stories_055:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 02:03:10
   youtube_id: CPNQ_-HKW2Q
+  language: en
   id: "55"
   sex: F
   last_name: Braig
@@ -278,6 +355,7 @@ stories_044:
   created_at: 2009-09-20 22:16:16
   updated_at: 2009-09-24 07:18:55
   youtube_id: _jTp1DZjRZc
+  language: en
   id: "44"
   sex: M
   last_name: Haggerty
@@ -291,6 +369,7 @@ stories_033:
   created_at: 2009-08-25 04:46:13
   updated_at: 2009-08-25 04:51:55
   youtube_id: t0IJOZHI6MM
+  language: en
   id: "33"
   sex: M
   last_name: Page
@@ -304,6 +383,7 @@ stories_022:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:07:00
   youtube_id: 211bLgFfZxc
+  language: en
   id: "22"
   sex: M
   last_name: Narang
@@ -317,6 +397,7 @@ stories_011:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:10:18
   youtube_id: vOWjy88eqhk
+  language: en
   id: "11"
   sex: F
   last_name: Aldrich
@@ -330,6 +411,7 @@ stories_056:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 06:34:00
   youtube_id: P8HQ6alP2iY
+  language: en
   id: "56"
   sex: F
   last_name: Toms
@@ -343,6 +425,7 @@ stories_045:
   created_at: 2009-09-20 22:17:27
   updated_at: 2009-09-24 07:08:46
   youtube_id: 5CIKKaGUCOw
+  language: en
   id: "45"
   sex: M
   last_name: Ostergren
@@ -356,6 +439,7 @@ stories_034:
   created_at: 2009-08-30 17:29:44
   updated_at: 2009-08-30 17:35:26
   youtube_id: L2oAKPjAU5I
+  language: en
   id: "34"
   sex: F
   last_name: Christian
@@ -369,6 +453,7 @@ stories_023:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:11:20
   youtube_id: ULQG4b91_8g
+  language: en
   id: "23"
   sex: F
   last_name: Gerritz
@@ -382,6 +467,7 @@ stories_012:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:15:08
   youtube_id: ZrxucPxmbGI
+  language: en
   id: "12"
   sex: F
   last_name: Pickron
@@ -395,6 +481,7 @@ stories_001:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:57:42
   youtube_id: Gq6MZAXPT_U
+  language: en
   id: "1"
   sex: M
   last_name: Adolph
@@ -408,6 +495,7 @@ stories_057:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 02:31:43
   youtube_id: 4nqUjEgumaw
+  language: en
   id: "57"
   sex: F
   last_name: Partovi
@@ -421,6 +509,7 @@ stories_046:
   created_at: 2009-09-20 22:18:34
   updated_at: 2009-09-24 07:13:26
   youtube_id: nskrd1hbyYc
+  language: en
   id: "46"
   sex: M
   last_name: Holliday
@@ -434,6 +523,7 @@ stories_035:
   created_at: 2009-09-01 17:04:37
   updated_at: 2009-09-01 17:04:37
   youtube_id: lqfaw96OqX4
+  language: en
   id: "35"
   sex: M
   last_name: Easterday
@@ -447,6 +537,7 @@ stories_024:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:28:32
   youtube_id: MEgpui2lI4I
+  language: en
   id: "24"
   sex: M
   last_name: Hill
@@ -460,6 +551,7 @@ stories_013:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:02:02
   youtube_id: SZyJnJosOUo
+  language: en
   id: "13"
   sex: F
   last_name: Stoliar
@@ -473,6 +565,7 @@ stories_002:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:09:56
   youtube_id: 7foqPn1DXtI
+  language: en
   id: "2"
   sex: M
   last_name: Krugman
@@ -486,6 +579,7 @@ stories_058:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 03:41:03
   youtube_id: hFEnbBYBKZE
+  language: en
   id: "58"
   sex: F
   last_name: Sparling
@@ -499,6 +593,7 @@ stories_047:
   created_at: 2009-09-29 05:29:42
   updated_at: 2009-09-29 05:38:37
   youtube_id: Zf_J-1pmiOM
+  language: en
   id: "47"
   sex: F
   last_name: Koren
@@ -512,6 +607,7 @@ stories_036:
   created_at: 2009-09-01 17:05:35
   updated_at: 2009-09-01 17:05:35
   youtube_id: EDkvKUWi_RA
+  language: en
   id: "36"
   sex: F
   last_name: Sanders
@@ -525,6 +621,7 @@ stories_025:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-09-02 21:25:43
   youtube_id: vpog7ZNh7UU
+  language: en
   id: "25"
   sex: F
   last_name: Ratchford
@@ -538,6 +635,7 @@ stories_014:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:45:54
   youtube_id: K1_mBQDdBd8
+  language: en
   id: "14"
   sex: F
   last_name: Ehlers
@@ -551,6 +649,7 @@ stories_003:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:10:40
   youtube_id: jRLPldqXqV0
+  language: en
   id: "3"
   sex: F
   last_name: Sparks
@@ -564,6 +663,7 @@ stories_060:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 06:54:13
   youtube_id: h5zM86CNJEs
+  language: en
   id: "60"
   sex: F
   last_name: Storey
@@ -577,6 +677,7 @@ stories_059:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 17:19:31
   youtube_id: 1jsLgIXEE6I
+  language: en
   id: "59"
   sex: F
   last_name: Lopez
@@ -590,6 +691,7 @@ stories_048:
   created_at: 2009-09-29 05:34:22
   updated_at: 2009-09-29 06:11:18
   youtube_id: sehVTtmfvyo
+  language: en
   id: "48"
   sex: F
   last_name: Singer
@@ -603,6 +705,7 @@ stories_037:
   created_at: 2009-09-01 17:06:32
   updated_at: 2009-09-01 17:06:32
   youtube_id: MXaQ7j0Du6A
+  language: en
   id: "37"
   sex: M
   last_name: Gordon
@@ -616,6 +719,7 @@ stories_026:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:12:15
   youtube_id: L0Cq3qhFm3M
+  language: en
   id: "26"
   sex: F
   last_name: Wesley Smith
@@ -629,6 +733,7 @@ stories_015:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:08:32
   youtube_id: n_pzfrgI2oU
+  language: en
   id: "15"
   sex: F
   last_name: Davis
@@ -642,6 +747,7 @@ stories_004:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:00:35
   youtube_id: 2suSOQa_EoU
+  language: en
   id: "4"
   sex: M
   last_name: Peterson
@@ -655,6 +761,7 @@ stories_061:
   created_at: 2009-10-11 10:32:29
   updated_at: 2009-10-18 06:41:09
   youtube_id: jGY0UiIySkA
+  language: en
   id: "61"
   sex: M
   last_name: Cruise
@@ -668,6 +775,7 @@ stories_050:
   created_at: 2009-10-02 05:00:32
   updated_at: 2009-10-02 06:01:28
   youtube_id: p7Yc-GjTUJQ
+  language: en
   id: "50"
   sex: F
   last_name: Barbosa
@@ -681,6 +789,7 @@ stories_049:
   created_at: 2009-10-01 22:30:05
   updated_at: 2009-10-01 22:47:05
   youtube_id: DtO04O9c7-g
+  language: en
   id: "49"
   sex: F
   last_name: Ellison
@@ -694,6 +803,7 @@ stories_038:
   created_at: 2009-09-01 17:07:13
   updated_at: 2009-09-01 17:07:13
   youtube_id: _l43UffkpJI
+  language: en
   id: "38"
   sex: F
   last_name: Pendle
@@ -707,6 +817,7 @@ stories_027:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:18:21
   youtube_id: Vknv0cApMLA
+  language: en
   id: "27"
   sex: F
   last_name: Rensch
@@ -720,6 +831,7 @@ stories_016:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:39:11
   youtube_id: uJ8L7ormSVA
+  language: en
   id: "16"
   sex: F
   last_name: Liu
@@ -733,6 +845,7 @@ stories_005:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 14:58:30
   youtube_id: WdX9XmtzAwE
+  language: en
   id: "5"
   sex: F
   last_name: Baker
@@ -746,6 +859,7 @@ stories_039:
   created_at: 2009-09-01 17:07:53
   updated_at: 2009-09-01 22:52:28
   youtube_id: MlpzR3yL-sw
+  language: en
   id: "39"
   sex: M
   last_name: Carter
@@ -759,6 +873,7 @@ stories_028:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:05:39
   youtube_id: 3PRoybSuVOU
+  language: en
   id: "28"
   sex: M
   last_name: Fitzgerald
@@ -772,6 +887,7 @@ stories_017:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 15:19:08
   youtube_id: 3uHXRxY-uf4
+  language: en
   id: "17"
   sex: F
   last_name: Altieri
@@ -785,6 +901,7 @@ stories_006:
   created_at: 2009-08-16 05:46:39
   updated_at: 2009-08-17 09:59:17
   youtube_id: CC-nkt6e6TE
+  language: en
   id: "6"
   sex: F
   last_name: Pae
