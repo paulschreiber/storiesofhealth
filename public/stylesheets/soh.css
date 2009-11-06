@@ -57,6 +57,25 @@ p.intro {
   line-height: 1.5em;
 }
 
+div#about p.action {
+  font-size: 1.2em;
+  background: #338CC1;
+  color: white;
+  text-align: center;
+
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  
+  width: 200px;
+  margin-top: 0;
+  padding: 0.2em 0;
+}
+
+div#about p.action-line {
+    margin-bottom: 0.2em;
+    margin-top: 2em;
+}
+
 img {
   border: 0;
 }
