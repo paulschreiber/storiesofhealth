@@ -6,6 +6,10 @@ class HomeController < ApplicationController
     @subtitle = "Every face has a story"
   end
   
+  def trailer
+    @subtitle = "Trailers"
+  end
+  
   def about
     @subtitle = "About"
   end
