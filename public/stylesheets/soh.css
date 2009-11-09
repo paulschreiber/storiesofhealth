@@ -202,7 +202,7 @@ object.video {
   height: 344px;
 }
 
-div[role='button'], /* Firefox Flashblock plugin */
+div.selected-container div[role='button'], /* Firefox Flashblock plugin */
 object#yt-player,
 div.video-story-medium,
 div.video-story { 
