@@ -34,6 +34,14 @@ function bindIndexPageVideos() {
   });
 }
 
+function onYouTubePlayerReady(playerId) {
+  var ytplayer = $("#yt-player")[0];
+  if (ytplayer) {
+    ytplayer.cueVideoById(videoId, 0);
+    $(ytplayer).bind("click", toggleVideoPlaying);
+  }
+}
+
 function bindFrontPageVideos() {
   $('.selected-stories .video-story').each(function(){
     $(this).bind("click", loadVideo);
@@ -42,6 +50,11 @@ function bindFrontPageVideos() {
   $('.video-story-medium').each(function(){
     $(this).bind("click", loadVideo);
   });
+
+  var params = { allowScriptAccess: "always" };
+  var atts = { id: "yt-player" };
+  swfobject.embedSWF("http://www.youtube.com/apiplayer?enablejsapi=1&playerapiid=ytplayer", 
+                     "yt-player-wrapper", "400", "300", "8", null, null, params, atts);
 }
 
 function bindVideos() {
@@ -73,9 +86,9 @@ function initScrollable() {
 }
 
 $(function() {         
-	  bindFrontPageVideos();
-	  bindIndexPageVideos();
-		bindVideos();
+    bindFrontPageVideos();
+    bindIndexPageVideos();
+    bindVideos();
     bindTags();
 }); 
 

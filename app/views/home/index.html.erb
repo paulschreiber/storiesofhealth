@@ -1,13 +1,14 @@
-<p class="intro">Millions of Americans—people just like you—have suffered because of this country&rsquo;s health care system. <a href="<%= url_for(:controller => :home, :action => :video) %>">Listen to their stories</a>.</p>
+<p class="intro">Millions of Americans—people just like you—have suffered because of this country&rsquo;s health care system. <a href="<%= url_for(:controller => :home, :action => :stories) %>">Listen to their stories</a>.</p>
 
 <div class="selected-container">
-<%= content_tag(:div, "<div class='play'></div>", :id => "story-#{@story.id}", :class => "video-story-medium", :style => "background: url('/images/headshots-medium/#{@story.image_id}');") %>
+	<% content_tag(:div, "<div class='play'></div>", :id => "story-#{@story.id}", :class => "video-story-medium", :style => "background: url('/images/headshots-medium/#{@story.image_id}');") %>
+	<div id="yt-player-wrapper" class="video-story-medium"></div>
 
-<div class="selected-stories">
-<% @selected_stories.each do |s| %>
+	<div class="selected-stories">
+<%- @selected_stories.each do |s| -%>
 	<%= content_tag(:div, "<div class='play'></div>", :id => "story-#{s.id}", :class => "video-story", :style => "background: url('/images/headshots-small/#{s.image_id}');") %>
-<% end %>
-</div>
+<%- end -%>
+	</div>
 </div>
 
 <%- compute_tag_sentence(nil) -%>

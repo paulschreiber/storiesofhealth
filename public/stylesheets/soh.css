@@ -202,12 +202,19 @@ object.video {
   height: 344px;
 }
 
+div[role='button'], /* Firefox Flashblock plugin */
+object#yt-player,
 div.video-story-medium,
 div.video-story { 
   cursor: pointer;
   float: left; 
   -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(white));
 } 
+
+div.video-story-medium,
+object#yt-player {
+  margin-top: 15px;
+}
 
 div.video-story {
   width: 200px;
@@ -226,7 +233,6 @@ div.selected-stories div.video-story {
 }
 
 div.video-story-medium {
-  margin-top: 15px;
   width: 400px;
   height: 300px;
 }

@@ -1,13 +1,16 @@
-class HomeController < ApplicationController
-  def index(story_count=3)
+class HomeController < ApplicationController  
+  include HomeHelper
+  
+  def index(story_count=2)
     @stories = Story.find_by_sql("SELECT * FROM stories WHERE youtube_id IS NOT NULL ORDER BY RAND() LIMIT #{story_count}")
     @story = @stories.first
-    @selected_stories = @stories[1..(story_count+1)]
+    @selected_stories = @stories[0..story_count]
     @subtitle = "Every face has a story"
   end
   
   def trailers
     @subtitle = "Trailers"
+    @trailer_list = trailer_list
   end
   
   def about
