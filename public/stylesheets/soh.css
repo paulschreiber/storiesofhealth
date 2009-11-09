@@ -190,6 +190,10 @@ div.video[role='button'] {
   width: 425px ! important;
 }
 
+div.description {
+  clear: both;
+}
+
 div.description,
 div.share,
 object.video {
