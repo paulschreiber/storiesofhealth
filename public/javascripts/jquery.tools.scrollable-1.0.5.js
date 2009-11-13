@@ -1,5 +1,5 @@
 /**
- * jquery.scrollable 1.0.5 - Scroll your HTML with eye candy.
+ * tools.scrollable 1.1.2 - Scroll your HTML with eye candy.
  * 
  * Copyright (c) 2009 Tero Piirainen
  * http://flowplayer.org/tools/scrollable.html
@@ -8,69 +8,98 @@
  * http://www.opensource.org/licenses
  *
  * Launch  : March 2008
- * Date: 2009-06-12 11:02:45 +0000 (Fri, 12 Jun 2009)
- * Revision: 1911 
+ * Date: ${date}
+ * Revision: ${revision} 
  */
-(function($) {
+(function($) { 
 		
 	// static constructs
-	$.tools = $.tools || {version: {}};
+	$.tools = $.tools || {};
 	
-	$.tools.version.scrollable = '1.0.5';
+	$.tools.scrollable = {
+		version: '1.1.2',
+		
+		conf: {
+			
+			// basics
+			size: 5,
+			vertical: false,
+			speed: 400,
+			keyboard: true,		
+			
+			// by default this is the same as size
+			keyboardSteps: null, 
+			
+			// other
+			disabledClass: 'disabled',
+			hoverClass: null,		
+			clickable: true,
+			activeClass: 'active', 
+			easing: 'swing',
+			loop: false,
+			
+			items: '.items',
+			item: null,
+			
+			// navigational elements			
+			prev: '.prev',
+			next: '.next',
+			prevPage: '.prevPage',
+			nextPage: '.nextPage', 
+			api: false
+			
+			// CALLBACKS: onBeforeSeek, onSeek, onReload
+		} 
+	};
 				
-	var current = null;		
-
+	var current;		
 	
 	// constructor
 	function Scrollable(root, conf) {   
-
-		// current instance
-		var self = this;  
-		if (!current) { current = self; }		
 		
-		// generic binding function
-		function bind(name, fn) {
-			$(self).bind(name, function(e, args)  {
-				if (fn && fn.call(this, args.index) === false && args) {
-					args.proceed = false;	
-				}	
-			});	
-			
-			return self;
-		}
+		// current instance
+		var self = this, $self = $(this),
+			 horizontal = !conf.vertical,
+			 wrap = root.children(),
+			 index = 0,
+			 forward;  
+		
+		
+		if (!current) { current = self; }
 		
 		// bind all callbacks from configuration
 		$.each(conf, function(name, fn) {
-			if ($.isFunction(fn)) { bind(name, fn); }
-		});   
+			if ($.isFunction(fn)) { $self.bind(name, fn); }
+		});
 		
+		if (wrap.length > 1) { wrap = $(conf.items, root); }
 		
-		// horizontal flag
-		var horizontal = !conf.vertical;				
+		// navigational items can be anywhere when globalNav = true
+		function find(query) {
+			var els = $(query);
+			return conf.globalNav ? els : root.parent().find(query);	
+		}
 		
-		// wrap (root elements for items)
-		var wrap = $(conf.items, root);				
-		
-		// current index
-		var index = 0;		
-		
-		function find(query, ctx) {
-			return query.indexOf("#") != -1 ? $(query).eq(0) : ctx.siblings(query).eq(0);	
-		}		
+		// to be used by plugins
+		root.data("finder", find);
 		
 		// get handle to navigational elements
-		var navi = find(conf.navi, root);
-		var prev = find(conf.prev, root);
-		var next = find(conf.next, root);
-		var prevPage = find(conf.prevPage, root);
-		var nextPage = find(conf.nextPage, root);
-		
+		var prev = find(conf.prev),
+			 next = find(conf.next),
+			 prevPage = find(conf.prevPage),
+			 nextPage = find(conf.nextPage);
+
 		
 		// methods
 		$.extend(self, {
 			
 			getIndex: function() {
 				return index;	
+			},
+			
+			getClickIndex: function() {
+				var items = self.getItems(); 
+				return items.index(items.filter("." + conf.activeClass));	
 			},
 	
 			getConf: function() {
@@ -89,6 +118,10 @@
 				return Math.ceil(index / conf.size);	
 			},
 
+			getNaviButtons: function() {
+				return prev.add(next).add(prevPage).add(nextPage);	
+			},
+			
 			getRoot: function() {
 				return root;	
 			},
@@ -98,7 +131,7 @@
 			},
 			
 			getItems: function() {
-				return wrap.children();	
+				return wrap.children(conf.item);	
 			},
 			
 			getVisibleItems: function() {
@@ -107,76 +140,68 @@
 			
 			/* all seeking functions depend on this */		
 			seekTo: function(i, time, fn) {
+
+				if (i < 0) { i = 0; }				
 				
-				// default speed
-				if (time === undefined) { time = conf.speed; }
+				// nothing happens
+				if (index === i) { return self; }				
 				
 				// function given as second argument
 				if ($.isFunction(time)) {
 					fn = time;
-					time = conf.speed;
 				}
-								
-				if (i < 0) { i = 0; }				
-				if (i > self.getSize() - conf.size) { return self; } 				
+
+				// seeking exceeds the end				 
+				if (i > self.getSize() - conf.size) { 
+					return conf.loop ? self.begin() : this.end(); 
+				} 				
 
 				var item = self.getItems().eq(i);					
 				if (!item.length) { return self; }				
 				
-				
 				// onBeforeSeek
-				var p = {index: i, proceed: true};
-				$(self).trigger("onBeforeSeek", p);				
-				if (!p.proceed) { return self; }
-									
+				var e = $.Event("onBeforeSeek");
+
+				$self.trigger(e, [i]);				
+				if (e.isDefaultPrevented()) { return self; }				
+				
+				// get the (possibly altered) speed
+				if (time === undefined || $.isFunction(time)) { time = conf.speed; }
+				
+				function callback() {
+					if (fn) { fn.call(self, i); }
+					$self.trigger("onSeek", [i]);
+				}
 				
 				if (horizontal) {
- 					var left = -item.position().left;					
-					wrap.animate({left: left}, time, conf.easing, fn ? function() { fn.call(self); } : null);
-					
+					wrap.animate({left: -item.position().left}, time, conf.easing, callback);					
 				} else {
-					var top = -item.position().top;										
-					wrap.animate({top: top}, time, conf.easing, fn ? function() { fn.call(self); } : null);							
-				}	
-				
-				
-				// navi status update
-				if (navi.length) {
-					var klass = conf.activeClass;
-					var page = Math.ceil(i / conf.size);
-					page = Math.min(page, navi.children().length - 1);
-					navi.children().removeClass(klass).eq(page).addClass(klass);
-				} 
-				
-				// prev buttons disabled flag
-				if (i === 0) {
-					prev.add(prevPage).addClass(conf.disabledClass);					
-				} else {
-					prev.add(prevPage).removeClass(conf.disabledClass);
+					wrap.animate({top: -item.position().top}, time, conf.easing, callback);							
 				}
-								
-				// next buttons disabled flag
-				if (i >= self.getSize() - conf.size) {
-					next.add(nextPage).addClass(conf.disabledClass);
-				} else {
-					next.add(nextPage).removeClass(conf.disabledClass);
-				}				
+				
 				
 				current = self;
 				index = i;				
 				
-				// onSeek after index being updated
-				$(self).trigger("onSeek", {index: i});				
+				// onStart
+				e = $.Event("onStart");
+				$self.trigger(e, [i]);				
+				if (e.isDefaultPrevented()) { return self; }				
+	
+				
+				/* default behaviour */
+				
+				// prev/next buttons disabled flags
+				prev.add(prevPage).toggleClass(conf.disabledClass, i === 0);
+				next.add(nextPage).toggleClass(conf.disabledClass, i >= self.getSize() - conf.size);
+				
 				return self; 
 			},			
 			
 				
 			move: function(offset, time, fn) {
-				var to = index + offset;
-				if (conf.loop && to > (self.getSize() - conf.size)) {
-					to = 0;	
-				}
-				return this.seekTo(to, time, fn);
+				forward = offset > 0;
+				return this.seekTo(index + offset, time, fn);
 			},
 			
 			next: function(time, fn) {
@@ -188,101 +213,119 @@
 			},
 			
 			movePage: function(offset, time, fn) {
-				return this.move(conf.size * offset, time, fn);		
-			},
-			
-			setPage: function(page, time, fn) {
-				var size = conf.size;
-				var index = size * page;
-				var lastPage = index + size >= this.getSize(); 
-				if (lastPage) {
-					index = this.getSize() - conf.size;
+				forward = offset > 0;
+				var steps = conf.size * offset;
+				
+				var i = index % conf.size;
+				if (i > 0) {
+				 	steps += (offset > 0 ? -i : conf.size - i);
 				}
-				return this.seekTo(index, time, fn);
+				
+				return this.move(steps, time, fn);		
 			},
 			
 			prevPage: function(time, fn) {
-				return this.setPage(this.getPageIndex() - 1, time, fn);
+				return this.movePage(-1, time, fn);
 			},  
 	
 			nextPage: function(time, fn) {
-				return this.setPage(this.getPageIndex() + 1, time, fn);
-			}, 
+				return this.movePage(1, time, fn);
+			},			
+			
+			setPage: function(page, time, fn) {
+				return this.seekTo(page * conf.size, time, fn);
+			},			
 			
 			begin: function(time, fn) {
+				forward = false;
 				return this.seekTo(0, time, fn);	
 			},
 			
 			end: function(time, fn) {
-				return this.seekTo(this.getSize() - conf.size, time, fn);	
+				forward = true;
+				var to = this.getSize() - conf.size;
+				return to > 0 ? this.seekTo(to, time, fn) : self;	
 			},
 			
-			reload: function() {
-				return load();	
+			reload: function() {				
+				$self.trigger("onReload");
+				return self;
+			},			
+			
+			focus: function() {
+				current = self;
+				return self;
 			},
 			
-			click: function(index, time, fn) {
+			click: function(i) {
 				
-				var item = self.getItems().eq(index);
-				var klass = conf.activeClass;			
+				var item = self.getItems().eq(i), 
+					 klass = conf.activeClass,
+					 size = conf.size;			
 				
-				// check that index is sane
-				if (index < 0 || index >= this.getSize()) { return self; }
+				// check that i is sane
+				if (i < 0 || i >= self.getSize()) { return self; }
+				
+				// size == 1							
+				if (size == 1) {
+					if (conf.loop) { return self.next(); }
 					
+					if (i === 0 || i == self.getSize() -1)  { 
+						forward = (forward === undefined) ? true : !forward;	 
+					}
+					return forward === false  ? self.prev() : self.next(); 
+				} 
 				
-				// special case with two items
-				if (conf.size == 2) {
-					if (index == self.getIndex()) { index--; }
+				// size == 2
+				if (size == 2) {
+					if (i == index) { i--; }
 					self.getItems().removeClass(klass);
 					item.addClass(klass);					
-					return this.seekTo(index, time, fn);
-				}
-				
-
+					return self.seekTo(i, time, fn);
+				}				
+		
 				if (!item.hasClass(klass)) {				
 					self.getItems().removeClass(klass);
 					item.addClass(klass);
-					var delta = Math.floor(conf.size / 2);
-					var to = index - delta;
-
+					var delta = Math.floor(size / 2);
+					var to = i - delta;
+		
 					// next to last item must work
-					if (to > self.getSize() - conf.size) { 
-						to = self.getSize() - conf.size; 
+					if (to > self.getSize() - size) { 
+						to = self.getSize() - size; 
 					}
-					
-					if (to !== index) {
-						return this.seekTo(to, time, fn);		
-					}				 
+		
+					if (to !== i) {
+						return self.seekTo(to);		
+					}
 				}
 				
 				return self;
 			},
-
-			// callback functions
-			onBeforeSeek: function(fn) {
-				return bind("onBeforeSeek", fn); 		
-			},
 			
-			onSeek: function(fn) {
-				return bind("onSeek", fn); 		
-			}
+			// bind / unbind
+			bind: function(name, fn) {
+				$self.bind(name, fn);
+				return self;	
+			},	
+			
+			unbind: function(name) {
+				$self.unbind(name);
+				return self;	
+			}			
 			
 		});
-	
 		
-		// mousewheel
-		if ($.isFunction($.fn.mousewheel)) { 
-			root.bind("mousewheel.scrollable", function(e, delta)  {
-				// opera goes to opposite direction
-				var step = $.browser.opera ? 1 : -1;
-				
-				self.move(delta > 0 ? step : -step, 50);
-				return false;
-			});
-		}  
-		
+		// callbacks	
+		$.each("onBeforeSeek,onStart,onSeek,onReload".split(","), function(i, ev) {
+			self[ev] = function(fn) {
+				return self.bind(ev, fn);	
+			};
+		});  
+			
+			
 		// prev button		
-		prev.addClass(conf.disabledClass).click(function() { 
+		prev.addClass(conf.disabledClass).click(function() {
 			self.prev(); 
 		});
 		
@@ -297,145 +340,76 @@
 			self.nextPage(); 
 		});
 		
+		if (self.getSize() < conf.size) {
+			next.add(nextPage).addClass(conf.disabledClass);	
+		}
+		
 
 		// next page button
 		prevPage.addClass(conf.disabledClass).click(function() { 
 			self.prevPage(); 
 		});		
-
 		
-		// keyboard
-		if (conf.keyboard) {			
+		
+		// hover
+		var hc = conf.hoverClass, keyId = "keydown." + Math.random().toString().substring(10); 
+			
+		self.onReload(function() { 
 
-			// keyboard works on one instance at the time. thus we need to unbind first
-			$(document).unbind("keydown.scrollable").bind("keydown.scrollable", function(evt) {
-				
-				var el = current;	
-				if (!el || evt.altKey || evt.ctrlKey) { return; }
-					
-				if (horizontal && (evt.keyCode == 37 || evt.keyCode == 39)) {					
-					el.move(evt.keyCode == 37 ? -1 : 1);
-					return evt.preventDefault();
-				}	
-				
-				if (!horizontal && (evt.keyCode == 38 || evt.keyCode == 40)) {
-					el.move(evt.keyCode == 38 ? -1 : 1);
-					return evt.preventDefault();
-				}
-				
-				return true;
-				
-			});	 
-		}
-
-		// navi 			
-		function load() {			
-	
-			// generate new entries
-			if (navi.is(":empty") || navi.data("me") == self) {
-				
-				navi.empty();
-				navi.data("me", self);
-				
-				for (var i = 0; i < self.getPageAmount(); i++) {		
-					
-					var item = $("<" + conf.naviItem + "/>").attr("href", i).click(function(e) {							
-						var el = $(this);
-						el.parent().children().removeClass(conf.activeClass);
-						el.addClass(conf.activeClass);
-						self.setPage(el.attr("href"));
-						return e.preventDefault();
-					});
-					
-					if (i === 0) { item.addClass(conf.activeClass); }
-					navi.append(item);					
-				}
-				
-			// assign onClick events to existing entries
-			} else {
-				
-				// find a entries first -> syntaxically correct
-				var els = navi.children(); 
-				
-				els.each(function(i)  {
-					var item = $(this);
-					item.attr("href", i);
-					if (i === 0) { item.addClass(conf.activeClass); }
-					
-					item.click(function() {
-						navi.find("." + conf.activeClass).removeClass(conf.activeClass);
-						item.addClass(conf.activeClass);
-						self.setPage(item.attr("href"));
-					});
-					
-				});
-			}
-			
-			
-			// item.click()
-			if (conf.clickable) {
-				self.getItems().each(function(index, arg) {
-					var el = $(this);
-					if (!el.data("set")) {
-						el.bind("click.scrollable", function() {
-							self.click(index);		
-						});
-						el.data("set", true);
-					}
-				});				
-			}
-			
-			
-			// hover
-			if (conf.hoverClass) {
+			// hovering
+			if (hc) {
 				self.getItems().hover(function()  {
-					$(this).addClass(conf.hoverClass);		
+					$(this).addClass(hc);		
 				}, function() {
-					$(this).removeClass(conf.hoverClass);	
+					$(this).removeClass(hc);	
+				});						
+			}
+			
+			// clickable
+			if (conf.clickable) {
+				self.getItems().each(function(i) {
+					$(this).unbind("click.scrollable").bind("click.scrollable", function(e) {
+						if ($(e.target).is("a")) { return; }	
+						return self.click(i);
+					});
 				});
-			}			
+			}				
 			
-			return self;
-		}
-		
-		load();
-		
-		
-		// interval stuff
-		var timer = null;
+			// keyboard			
+			if (conf.keyboard) {				
+				
+				// keyboard works on one instance at the time. thus we need to unbind first
+				$(document).unbind(keyId).bind(keyId, function(evt) {
 
-		function setTimer() {
-
-			// do not start additional timer if already exists
-			if (timer) { return; }
-			
-			// construct new timer
-			timer = setInterval(function()  {
+					// do nothing with CTRL / ALT buttons
+					if (evt.altKey || evt.ctrlKey) { return; }
 					
-				// check if interval is being changed dynamically during runtime
-				if (conf.interval === 0) {					
-					clearInterval(timer);
-					timer = 0;
-					return;
-				}			
+					// do nothing for unstatic and unfocused instances
+					if (conf.keyboard != 'static' && current != self) { return; }
+					
+					var s = conf.keyboardSteps;				
+										
+					if (horizontal && (evt.keyCode == 37 || evt.keyCode == 39)) {					
+						self.move(evt.keyCode == 37 ? -s : s);
+						return evt.preventDefault();
+					}	
+					
+					if (!horizontal && (evt.keyCode == 38 || evt.keyCode == 40)) {
+						self.move(evt.keyCode == 38 ? -s : s);
+						return evt.preventDefault();
+					}
+					
+					return true;
+					
+				});
 				
-				self.next();				
-			}, conf.interval);
-		}	
+			} else  {
+				$(document).unbind(keyId);	
+			}				
+
+		});
 		
-		if (conf.interval > 0) {			
-			
-			// when mouse enters, autoscroll stops
-			root.hover(function() {			
-				clearInterval(timer);		
-				timer = 0;
-				
-			}, function() {		
-				setTimer();	
-			});
-			
-			setTimer();	
-		}
+		self.reload(); 
 		
 	} 
 
@@ -445,52 +419,19 @@
 			
 		// already constructed --> return API
 		var el = this.eq(typeof conf == 'number' ? conf : 0).data("scrollable");
-		if (el) { return el; }		
-		
+		if (el) { return el; }		 
  
-		var opts = {
-			
-			// basics
-			size: 5,
-			vertical:false,			
-			clickable: true,
-			loop: false,
-			interval: 0,			
-			speed: 400,
-			keyboard: true,			
-			
-			// other
-			activeClass:'active',
-			disabledClass: 'disabled',
-			hoverClass: null,			
-			easing: 'swing',
-			
-			// navigational elements
-			items: '.items',
-			prev: '.prev',
-			next: '.next',
-			prevPage: '.prevPage',
-			nextPage: '.nextPage',			
-			navi: '.navi',
-			naviItem: 'a',
-			api:false,
-
-			
-			// callbacks
-			onBeforeSeek: null,
-			onSeek: null
-			
-		}; 
+		var globals = $.extend({}, $.tools.scrollable.conf);
+		conf = $.extend(globals, conf);
 		
-		
-		$.extend(opts, conf);		
+		conf.keyboardSteps = conf.keyboardSteps || conf.size;
 		
 		this.each(function() {			
-			el = new Scrollable($(this), opts);
+			el = new Scrollable($(this), conf);
 			$(this).data("scrollable", el);	
 		});
 		
-		return opts.api ? el: this; 
+		return conf.api ? el: this; 
 		
 	};
 			
