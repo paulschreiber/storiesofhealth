@@ -77,7 +77,7 @@ function initScrollable() {
   $("div.scrollable").scrollable({
 	  size: itemCount,
 	  speed: 1200
-	});     
+	}).navigator();
 	
 	// don't call this on the front page or static pages
 	if ($("div.scrollable").length) { 
