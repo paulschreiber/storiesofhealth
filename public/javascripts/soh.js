@@ -90,6 +90,7 @@ $(function() {
     bindIndexPageVideos();
     bindVideos();
     bindTags();
+    $("div.action a").track({category: "outgoing"});
 }); 
 
 jQuery.ajaxSetup({

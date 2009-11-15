@@ -14,20 +14,20 @@
 	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js", :charset => "utf-8" %>
 	<%= javascript_include_tag "jquery.tools.scrollable-1.1.2.min.js", "jquery.tools.scrollable.navigator-1.0.2.min.js", "jquery.mousewheel.min.js", "jquery.google-analytics.min.js", "addthis_widget.js", "soh.js", :charset => "utf-8", :cache => "cache/all" %>
 	<%- end -%>
-	<%- if RAILS_ENV == "production" || params[:action] == "index" -%>
-	<script type="text/javascript" charset="utf-8">
-	// <![CDATA[
-	<%- if RAILS_ENV == "production" -%>
-	$.trackPage("UA-1895263-5");
-	$.fn.track.defaults.debug = false;
-	<%- end -%>
-	<%- if params[:action] == "index" -%>
-	<%- if RAILS_ENV == "production" -%>
-	var videoId = '<%= random_trailer_id %>';
-	<%- else -%>
-	var videoId = "u1zgFlCw8Aw"; // youtube demo
-	<%- end -%>
-	<%- end -%>
+	<%- if RAILS_ENV == "production" || ["index"].index(params[:action]) -%>
+		<script type="text/javascript" charset="utf-8">
+		// <![CDATA[
+		<%- if RAILS_ENV == "production" -%>
+			$.trackPage("UA-1895263-5");
+			$.fn.track.defaults.debug = false;
+		<%- end -%>
+		<%- if params[:action] == "index" -%>
+			<%- if RAILS_ENV == "production" -%>
+				var videoId = '<%= random_trailer_id %>';
+			<%- else -%>
+				var videoId = "u1zgFlCw8Aw"; // youtube demo
+			<%- end -%>
+		<%- end -%>
  	// ]]>
 	</script>
 	<%- end -%>
