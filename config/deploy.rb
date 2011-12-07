@@ -1,7 +1,7 @@
 set :application, "storiesofhealth"
 set :domain, "shrub.ca"
 set :use_sudo, false
-set :repository,  "http://#{domain}/paulsvn/storiesofhealth"
+set :repository,  "https://#{domain}/paulsvn/storiesofhealth"
 set :deploy_via, :export
 
 # If you aren't deploying to /u/apps/#{application} on the target
