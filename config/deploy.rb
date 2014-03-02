@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application, "storiesofhealth"
 set :domain, "shrub.ca"
 set :use_sudo, false
