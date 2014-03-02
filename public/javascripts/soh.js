@@ -53,7 +53,7 @@ function bindFrontPageVideos() {
 
   var params = { allowScriptAccess: "always" };
   var atts = { id: "yt-player" };
-  swfobject.embedSWF("http://www.youtube.com/apiplayer?enablejsapi=1&playerapiid=ytplayer", 
+  swfobject.embedSWF("https://www.youtube.com/apiplayer?enablejsapi=1&playerapiid=ytplayer",
                      "yt-player-wrapper", "400", "300", "8", null, null, params, atts);
 }
 
@@ -78,20 +78,20 @@ function initScrollable() {
 	  size: itemCount,
 	  speed: 1200
 	}).navigator();
-	
+
 	// don't call this on the front page or static pages
-	if ($("div.scrollable").length) { 
+	if ($("div.scrollable").length) {
 	  $("div.scrollable").scrollable().seekTo(0);
   }
 }
 
-$(function() {         
+$(function() {
     bindFrontPageVideos();
     bindIndexPageVideos();
     bindVideos();
     bindTags();
     $("div.action a").track({category: "outgoing"});
-}); 
+});
 
 jQuery.ajaxSetup({
   "beforeSend": function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}

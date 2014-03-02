@@ -7,15 +7,15 @@ module ApplicationHelper
       return "Hear stories from people who have suffered because of the United States&rsquo; broken health care system."
     end
   end
-  
+
   def object_tag(youtube_id, autoplay=nil)
-    link = "http://www.youtube.com/v/#{youtube_id}"
+    link = "https://www.youtube.com/v/#{youtube_id}"
     if RAILS_ENV != "development" and autoplay
       link += "&amp;autoplay=1"
     end
-    
+
     result = "<object class='video' type='application/x-shockwave-flash' data='#{link}'>
   		<param name='movie' value='#{link}'></param>
   	</object>"
-  end  
+  end
 end
