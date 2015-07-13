@@ -61,7 +61,7 @@ class HomeController < ApplicationController
       redirect_to :action => :index and return
     end
 
-    @stories = Story.where("youtube_id IS NOT NULL AND tags.name = ?", params[:id]).include("tags").order("first_name")
+    @stories = Story.includes(:tags).where("youtube_id IS NOT NULL AND tags.name = ?", params[:id]).order(:first_name).references(:tags)
     @description = "Hear health care stories from people who #{@tag.first.description_phrase}."
     return specified
   end
@@ -78,7 +78,7 @@ class HomeController < ApplicationController
   # AJAX thumbnail loader
   def browser
     if params[:q] == "tag"
-      @stories = Story.where("youtube_id IS NOT NULL AND tags.name = ?", params[:id]).include("tags").order("first_name")
+      @stories = Story.includes(:tags).where("youtube_id IS NOT NULL AND tags.name = ?", params[:id]).order(:first_name).references(:tags)
     elsif params[:q] == "from"
       @stories = Story.where("youtube_id IS NOT NULL AND city = ?", params[:id]).order("first_name")
     end
