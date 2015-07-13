@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 
-gem 'mysql2', '~> 0.2.7'
+gem 'mysql2'
 gem 'htmlentities'
 
 
