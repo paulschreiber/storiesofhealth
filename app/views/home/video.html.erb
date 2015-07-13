@@ -3,13 +3,13 @@
 	<object class="video" type="application/x-shockwave-flash" data="<%= @story.youtube_embed_code %>">
 		<param name="movie" value="<%= @story.youtube_embed_code %>"></param>
 	</object>
-	
+
 	<div class="description">
-		<p><%= @story.description %> <a href="http://www.addthis.com/bookmark.php" class="addthis_button permalink">Share</a>&nbsp;|&nbsp;<a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
+		<p><%= @story.description.html_safe %> <a href="http://www.addthis.com/bookmark.php" class="addthis_button permalink">Share</a>&nbsp;|&nbsp;<a href="<%= permalink(@story) %>" class="permalink">permalink</a></p>
 	</div>
 
 		<div class="share">
-			<p>See more stories like <%= @story.first_name %>&rsquo;s about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence %>.
+			<p>See more stories like <%= @story.first_name %>&rsquo;s about people <a class="tag" href="<%= @story.city_tag %>">from <%= @story.city %></a><%= @join_phrase %> who <%= @tag_sentence.html_safe %>.
 			</p>
 	</div>
 
@@ -18,7 +18,7 @@
 <%- if params[:action] == "fetch_story" #AJAX load -%>
 <script type="text/javascript" charset="utf-8">
 // <![CDATA[
-currentUrl = '<%= permalink(@story) %>';	
+currentUrl = '<%= permalink(@story) %>';
 $('title').html('<%= "Stories of Health &raquo; #{@story.first_name}&rsquo;s story" %>');
 // ]]>
 </script>
