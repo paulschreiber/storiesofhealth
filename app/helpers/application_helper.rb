@@ -10,7 +10,7 @@ module ApplicationHelper
 
   def object_tag(youtube_id, autoplay=nil)
     link = "https://www.youtube.com/v/#{youtube_id}"
-    if RAILS_ENV != "development" and autoplay
+    if !Rails.env.development? && autoplay
       link += "&amp;autoplay=1"
     end
 

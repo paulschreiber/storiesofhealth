@@ -15,7 +15,7 @@ class Story < ActiveRecord::Base
 
   def youtube_embed_code
     link = "https://www.youtube.com/v/#{self.youtube_id}"
-    if RAILS_ENV != "development"
+    unless Rails.env.development?
       link += "&amp;autoplay=1"
     end
     link
