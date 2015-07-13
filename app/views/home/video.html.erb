@@ -16,11 +16,9 @@
 </div>
 
 <% if params[:action] == "fetch_story" #AJAX load %>
-<script type="text/javascript" charset="utf-8">
-// <![CDATA[
+<script type="text/javascript">
 currentUrl = '<%= permalink(@story) %>';
 $('title').html('<%= "Stories of Health &raquo; #{@story.first_name}&rsquo;s story" %>');
-// ]]>
 </script>
 <% end %>
 <% if @browser %>
