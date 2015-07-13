@@ -26,7 +26,7 @@ class HomeController < ApplicationController
   end
 
   def stories
-    @stories = Story.where("youtube_id IS NOT NULL").order("first_name")
+    @stories = Story.where("youtube_id IS NOT NULL").order(:first_name)
     @subtitle = "Every face has a story"
     render :action => "list" and return
   end
@@ -40,7 +40,7 @@ class HomeController < ApplicationController
       redirect_to :action => :stories
     end
 
-    @stories = Story.where("youtube_id IS NOT NULL").order("first_name")
+    @stories = Story.where("youtube_id IS NOT NULL").order(:first_name)
     @story = Story.where("youtube_id IS NOT NULL AND id = ?", params[:id]).first
     @story = @stories.first if @story.nil?
     @subtitle = "#{@story.first_name}&rsquo;s story"
@@ -50,7 +50,7 @@ class HomeController < ApplicationController
   end
 
   def from
-    @stories = Story.where("youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]).order("first_name")
+    @stories = Story.where("youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]).order(:first_name)
     @description = "Hear health care stories from people in #{@stories.first.city}, #{@stories.first.state}."
     return specified
   end
@@ -80,7 +80,7 @@ class HomeController < ApplicationController
     if params[:q] == "tag"
       @stories = Story.includes(:tags).where("youtube_id IS NOT NULL AND tags.name = ?", params[:id]).order(:first_name).references(:tags)
     elsif params[:q] == "from"
-      @stories = Story.where("youtube_id IS NOT NULL AND city = ?", params[:id]).order("first_name")
+      @stories = Story.where("youtube_id IS NOT NULL AND city = ?", params[:id]).order(:first_name)
     end
 
     @stories = Story.all if @stories.empty?
