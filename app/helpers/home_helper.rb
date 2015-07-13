@@ -7,7 +7,7 @@ module HomeHelper
     tag_list = []
 
     if story.nil?
-      all_tags = Tag.where("SELECT * FROM tags ORDER BY RAND() LIMIT 5")
+      all_tags = Tag.all.order("RAND()").limit(5)
       klass = nil
     else
       all_tags = story.tags

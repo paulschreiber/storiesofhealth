@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   include HomeHelper
 
   def index(story_count=2)
-    @stories = Story.where("youtube_id IS NOT NULL ORDER BY RAND() LIMIT #{story_count}")
+    @stories = Story.where("youtube_id IS NOT NULL").order("RAND()").limit(story_count)
     @story = @stories.first
     @selected_stories = @stories[0..story_count]
     @subtitle = "Every face has a story"
@@ -41,7 +41,7 @@ class HomeController < ApplicationController
     end
 
     @stories = Story.where("youtube_id IS NOT NULL").order("first_name")
-    @story = Story.where("youtube_id IS NOT NULL AND id = ?", params[:id]]).first
+    @story = Story.where("youtube_id IS NOT NULL AND id = ?", params[:id]).first
     @story = @stories.first if @story.nil?
     @subtitle = "#{@story.first_name}&rsquo;s story"
     @description = @story.description
@@ -50,7 +50,7 @@ class HomeController < ApplicationController
   end
 
   def from
-    @stories = Story.where("youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]]).order("first_name")
+    @stories = Story.where("youtube_id IS NOT NULL AND (REPLACE(city, ' ', '') = ? OR city = ?)", params[:id], params[:id]).order("first_name")
     @description = "Hear health care stories from people in #{@stories.first.city}, #{@stories.first.state}."
     return specified
   end
