@@ -1,56 +1,15 @@
-ActionController::Routing::Routes.draw do |map|
-  # The priority is based upon order of creation: first created -> highest priority.
-
-  # Sample of regular route:
-  #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   map.resources :products
-
-  # Sample resource route with options:
-  #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
-
-  # Sample resource route with sub-resources:
-  #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
-  # Sample resource route with more complex sub-resources
-  #   map.resources :products do |products|
-  #     products.resources :comments
-  #     products.resources :sales, :collection => { :recent => :get }
-  #   end
-
-  # Sample resource route within a namespace:
-  #   map.namespace :admin do |admin|
-  #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
-  #     admin.resources :products
-  #   end
-
-  # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => "home"
-  map.home 'about', :controller => "home", :action => 'about'
-  map.home 'share', :controller => "home", :action => 'share'
-  map.home 'action', :controller => "home", :action => 'action'
-  map.home 'stories', :controller => "home", :action => 'stories'
-  map.home 'trailers', :controller => "home", :action => 'trailers'
-  map.home 'video/:id', :controller => "home", :action => 'video'
-  map.home 'v/:id', :controller => "home", :action => 'v'
-  map.home 'from/:id', :controller => "home", :action => 'from'
-  map.home 'tag/:id', :controller => "home", :action => 'tag'
-
-  # AJAX video browser loader
-  map.home 'browser/tag/:id', :controller => "home", :action => 'browser', :q => "tag"
-  map.home 'browser/from/:id', :controller => "home", :action => 'browser', :q => "from"
-
-  # See how all your routes lay out with "rake routes"
-
-  # Install the default routes as the lowest priority.
-  # Note: These default routes make all actions in every controller accessible via GET requests. You should
-  # consider removing the them or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+Storiesofhealth::Application.routes.draw do
+  match '/' => 'home#index'
+  match 'about' => 'home#about', :as => :home
+  match 'share' => 'home#share', :as => :home
+  match 'action' => 'home#action', :as => :home
+  match 'stories' => 'home#stories', :as => :home
+  match 'trailers' => 'home#trailers', :as => :home
+  match 'video/:id' => 'home#video', :as => :home
+  match 'v/:id' => 'home#v', :as => :home
+  match 'from/:id' => 'home#from', :as => :home
+  match 'tag/:id' => 'home#tag', :as => :home
+  match 'browser/tag/:id' => 'home#browser', :as => :home, :q => 'tag'
+  match 'browser/from/:id' => 'home#browser', :as => :home, :q => 'from'
+  match '/:controller(/:action(/:id))'
 end
