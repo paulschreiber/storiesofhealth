@@ -5,11 +5,11 @@
 	<div id="yt-player-wrapper" class="video-story-medium"></div>
 
 	<div class="selected-stories">
-<%- @selected_stories.each do |s| -%>
+<% @selected_stories.each do |s| %>
 	<%= content_tag(:div, "<div class='play'></div>".html_safe, :id => "story-#{s.id}", :class => "video-story", :style => "background: url('/images/headshots-small/#{s.image_id}');") %>
-<%- end -%>
+<% end %>
 	</div>
 </div>
 
-<%- compute_tag_sentence(nil) -%>
+<% compute_tag_sentence(nil) %>
 <p class="intro">See stories about people who <%= @tag_sentence.html_safe %>.</p>

@@ -10,21 +10,21 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-	<%- if Rails.env.production? || ["index"].index(params[:action]) -%>
+	<% if Rails.env.production? || ["index"].index(params[:action]) %>
 		<script type="text/javascript">
-		<%- if Rails.env.production? -%>
+		<% if Rails.env.production? %>
 			$.trackPage("UA-1895263-5");
 			$.fn.track.defaults.debug = false;
-		<%- end -%>
-		<%- if params[:action] == "index" -%>
-			<%- if Rails.env.production? -%>
+		<% end %>
+		<% if params[:action] == "index" %>
+			<% if Rails.env.production? %>
 				var videoId = '<%= random_trailer_id %>';
-			<%- else -%>
+			<% else %>
 				var videoId = "u1zgFlCw8Aw"; // youtube demo
-			<%- end -%>
-		<%- end -%>
+			<% end %>
+		<% end %>
 	</script>
-	<%- end -%>
+	<% end %>
 </head>
 
 <body>
@@ -36,12 +36,12 @@
 			<p>Health care in the United States is broken.</p>
 
 			<p>To fully understand how severe of a crisis we&rsquo;re in, people from all over California told us about their experiences with a system in dire need of reform.</p>
-			<%- if params[:action] != "action" -%>
+			<% if params[:action] != "action" %>
 			<p><input class="button" type="button" value="Take Action &#9658;" onclick="window.location='<%= url_for(:action => "action") %>'" /></p>
 
 			<p class="action-line">Call your member of congress <em>today</em>:</p>
 			<p class="action"> <strong>877-264-4226</strong></p>
-			<%- end -%>
+			<% end %>
 			</div>
 		</div>
 

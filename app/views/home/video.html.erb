@@ -1,4 +1,4 @@
-<%- compute_tag_sentence(@story) -%>
+<% compute_tag_sentence(@story) %>
 <div id="video" class="video">
 	<object class="video" type="application/x-shockwave-flash" data="<%= @story.youtube_embed_code %>">
 		<param name="movie" value="<%= @story.youtube_embed_code %>"></param>
@@ -15,14 +15,14 @@
 
 </div>
 
-<%- if params[:action] == "fetch_story" #AJAX load -%>
+<% if params[:action] == "fetch_story" #AJAX load %>
 <script type="text/javascript" charset="utf-8">
 // <![CDATA[
 currentUrl = '<%= permalink(@story) %>';
 $('title').html('<%= "Stories of Health &raquo; #{@story.first_name}&rsquo;s story" %>');
 // ]]>
 </script>
-<%- end -%>
+<% end %>
 <% if @browser %>
 <%= render :partial => "browser" %>
 <% end %>

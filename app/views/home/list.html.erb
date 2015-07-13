@@ -1,5 +1,5 @@
 <ul class="all-stories">
-<%- @stories.each do |s| -%>
+<% @stories.each do |s| %>
 	<li>
 		<%= content_tag(:div, "<div class='play'></div>".html_safe, :id => "story-#{s.id}", :class => "video-story", :style => "background: url('/images/headshots-small/#{s.image_id}');") %>
 		<div class="description">
@@ -7,5 +7,5 @@
 		<p><%= s.description %></p>
 		</div>
 	</li>
-<%- end -%>
+<% end %>
 </ul>
